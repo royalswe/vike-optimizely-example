@@ -1,0 +1,26 @@
+{
+  "common": {
+    "readmore": "Lasīt vairāk",
+    "st": "gab",
+    "loading": "Ielādējas...",
+    "close": "Aizvērt",
+    "cancel": "Atcelt",
+    "yearfilter": "Gads",
+    "header": {
+      "search": "Meklēt",
+      "searchplaceholder": "Meklēt",
+      "location": "Atrašanās vieta",
+      "selectstartpage": "Atlasiet noklusējuma sākumlapu",
+      "tostartpage": "Uz sākumlapu"
+    },
+    "selectstartpagemodal": {
+      "header": "Izvēlieties sākumlapu",
+      "text": "Tagad varat izvēlēties, kuru sākumlapu rādīt nākamreiz, kad apmeklēsiet no šīs ierīces.",
+      "closemodal": "Ne tagad",
+      "savesettings": "Saglabāt iestatījumus"
+    },
+    "errors": {
+      "unknown": "Kaut kas nogāja greizi, lūdzu, vēlāk mēģiniet vēlreiz."
+    }
+  }
+}

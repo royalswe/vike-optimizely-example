@@ -1,0 +1,26 @@
+{
+  "common": {
+    "readmore": "Læs mere",
+    "st": "stk",
+    "loading": "Indlæser...",
+    "close": "Luk",
+    "cancel": "Afbestille",
+    "yearfilter": "År",
+    "header": {
+      "search": "Søg",
+      "searchplaceholder": "Søg på siten",
+      "location": "Beliggenhed",
+      "selectstartpage": "Vælg standard startside",
+      "tostartpage": "Til startsiden"
+    },
+    "selectstartpagemodal": {
+      "header": "Vælg startsiden",
+      "text": "Du kan nu vælge, hvilken startside der skal vises, næste gang du besøger siten fra denne enhed.",
+      "closemodal": "Ikke nu",
+      "savesettings": "Gem indstillinger"
+    },
+    "errors": {
+      "unknown": "Noget gik galt. Prøv igen senere."
+    }
+  }
+}

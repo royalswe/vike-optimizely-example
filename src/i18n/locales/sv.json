@@ -1,0 +1,26 @@
+{
+  "common": {
+    "readmore": "Läs mer",
+    "st": "st",
+    "loading": "Laddar...",
+    "close": "Stäng",
+    "cancel": "Avbryt",
+    "yearfilter": "Årtal",
+    "header": {
+      "search": "Sök",
+      "searchplaceholder": "Sök",
+      "location": "Välj marknad/land",
+      "selectstartpage": "Välj standard startsida",
+      "tostartpage": "Till startsidan"
+    },
+    "selectstartpagemodal": {
+      "header": "Välj startsida",
+      "text": "Du kan nu välja vilken startsida som ska visas nästa gång du besöker sajten från den här enheten.",
+      "closemodal": "Inte nu",
+      "savesettings": "Spara inställningar"
+    },
+    "errors": {
+      "unknown": "Något gick fel, vänligen försök igen senare."
+    }
+  }
+}

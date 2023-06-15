@@ -1,0 +1,51 @@
+{
+  "[vue]": {
+    "editor.defaultFormatter": "Vue.volar"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.formatOnSave": true,
+  "eslint.validate": ["typescript", "javascript"],
+  "prettier.singleQuote": true,
+  "prettier.endOfLine": "auto",
+  "prettier.printWidth": 80,
+  "prettier.semi": true,
+  "csharpToTypeScript.toCamelCase": true,
+  // vscode color scheme
+  "workbench.colorCustomizations": {
+    "activityBar.activeBackground": "#002346",
+    "activityBar.background": "#013161",
+    "activityBar.foreground": "#ffffff",
+    "activityBar.inactiveForeground": "#b8b8b8",
+    "activityBarBadge.background": "#94009f",
+    "activityBarBadge.foreground": "#ffffff",
+    "sash.hoverBorder": "#005dba",
+    "statusBar.background": "#013161",
+    "statusBar.foreground": "#c5c5c5",
+    "statusBarItem.hoverBackground": "#323556",
+    "statusBarItem.remoteBackground": "#94009f",
+    "statusBarItem.remoteForeground": "#e7e7e7",
+    "titleBar.activeBackground": "#013161",
+    "titleBar.activeForeground": "#e7e7e7",
+    "titleBar.inactiveBackground": "#002346",
+    "titleBar.inactiveForeground": "#e7e7e799",
+    "window.activeBorder": "#94009f",
+    "window.inactiveBorder": "#636363",
+    "list.inactiveSelectionBackground": "#00386f",
+    "list.inactiveSelectionForeground": "#ffffff",
+    "sideBar.background": "#21252b",
+    "sideBar.foreground": "#dfdfdf",
+    "sideBarSectionHeader.background": "#282c34",
+    "sideBarSectionHeader.foreground": "#abb2bf",
+    "tab.activeBackground": "#000000",
+    "tab.activeBorder": "#545454",
+    "tab.activeForeground": "#dcdcdc",
+    "tab.border": "#181a1f",
+    "tab.inactiveBackground": "#21252b",
+    "terminal.foreground": "#abb2bf"
+  }
+}

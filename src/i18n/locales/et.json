@@ -1,0 +1,26 @@
+{
+  "common": {
+    "readmore": "Loe rohkem",
+    "st": "tk",
+    "loading": "Laadimine...",
+    "close": "Sulge",
+    "cancel": "Tühista",
+    "yearfilter": "Aasta",
+    "header": {
+      "search": "Otsi",
+      "searchplaceholder": "Otsi",
+      "location": "Asukoht",
+      "selectstartpage": "Valige vaikimisi avaleht",
+      "tostartpage": "Avalehele"
+    },
+    "selectstartpagemodal": {
+      "header": "Valige avaleht",
+      "text": "Nüüd saate valida, millist avalehte järgmisel korral sellest seadmest külastades kuvada.",
+      "closemodal": "Mitte praegu",
+      "savesettings": "Salvesta sätted"
+    },
+    "errors": {
+      "unknown": "Midagi läks valesti, proovige hiljem uuesti."
+    }
+  }
+}

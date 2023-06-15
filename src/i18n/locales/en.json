@@ -1,0 +1,26 @@
+{
+  "common": {
+    "readmore": "Read more",
+    "st": "pcs",
+    "loading": "Loading...",
+    "close": "Close",
+    "cancel": "Cancel",
+    "yearfilter": "Year",
+    "header": {
+      "search": "Search",
+      "searchplaceholder": "Search",
+      "location": "Location",
+      "selectstartpage": "Select default startpage",
+      "tostartpage": "To startpage"
+    },
+    "selectstartpagemodal": {
+      "header": "Select startpage",
+      "text": "You can now choose which home page to display the next time you visit site from this device.",
+      "closemodal": "Not now",
+      "savesettings": "Save settings"
+    },
+    "errors": {
+      "unknown": "Something went wrong, please try again later."
+    }
+  }
+}
