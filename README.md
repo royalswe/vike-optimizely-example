@@ -1,5 +1,5 @@
-Vue 3 app running with https locally.
-Pina, i18n included.
+Vue 3 app with Optimizely(former episerver) CMS.
+https locally, Pina, i18n included.
 
 ## Prerequisites
 
