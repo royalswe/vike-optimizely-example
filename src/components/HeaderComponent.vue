@@ -10,13 +10,13 @@
       <slot name="headerLogo" />
     </template>
     <template #headerEnd>
-      <button v-if="commonStore.user.Name"
+      <button v-if="commonStore.user"
         class="c-compact-header__button c-compact-header__button--yellow js-toggle-open ms-3"
         data-element-id="loggedInMenu">
         <i class="c-compact-header__button-icon material-icons">account_circle</i>
-        <span class="c-compact-header__button-label">{{ commonStore.user.Name }}</span>
+        <span class="c-compact-header__button-label"></span>
       </button>
-      <button v-if="!commonStore.user.Name"
+      <button v-if="!commonStore.user"
         class="c-compact-header__button c-compact-header__button--yellow js-toggle-open ms-3" data-element-id="loginMenu">
         <i class="c-compact-header__button-icon material-icons">account_circle</i>
         <span class="c-compact-header__button-label">

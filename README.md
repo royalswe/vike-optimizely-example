@@ -1,5 +1,8 @@
-Vue 3 app running with https locally.
-Pina, i18n included.
+Vue 3 app running with vite-plugin-ssr
+Features
+* https
+* Pina
+* i18n
 
 ## Prerequisites
 
@@ -14,7 +17,7 @@ npm install
 ### Compile and Hot-Reload for Development
 
 ```sh
-npm run server 
+npm run server:watch 
 ```
 
 ### Type-Check, Compile and Minify for Production
@@ -30,10 +33,7 @@ npm run lint
 ```
 
 ## Project architecture
-
-This is a standard SPA Vue project with vps router.
-All data is fetched from optimizely (former episerver)
-First page load is SSR then client navigation.
+First page load is SSR then client navigation (SPA).
 
 # vite-plugin-ssr (vps)
 
@@ -53,20 +53,21 @@ in code inside the project
 
 ## File description ordered by when they are initiate
 The new folder Page is our new route and renderer is vps specifik files
-src
-├── renderer -- renders before the old SPA 
-│   ├── +onBeforeRoute.ts -- first hook loaded, we use the url and store paths in pagecontext : will be rendered client/server on navigation 
-│   ├── app.ts -- See this as app.vue / creates the app : creates on server and updates on client if needed.
-│   ├── +onRenderHtml.ts -- loads after onBeforeRender(the name duh) See this as index.html / renders the html : server only
-│   └── +onRenderClient.ts -- loads on navigation : client only
-├── pages -- routing
-│   ├── _error
-│   |   └── +Page -- will be rendered if throw exceptions
-│   ├── @slug and index
-│   │   ├── +Page.vue -- start page for the specifik route : client/server
-│   │   ├── +route.ts -- loads after +onBeforeRoute.ts and determit which route will be taken, can be set in +config if desired : client/server
-│   │   ├── +onBeforeRender.ts -- loads after +route and write code for that route before load pages : server only as default.
-│   |   ├── +config -- settings for files in the same hierarchy and bellow
-│   |   └── +Layout -- layout file, if not set it will pick rendere/LayoutDefault.ts
-│   └── index
-│       └── same as @layout. index is a folder that vps ignore so it's the root
+
+├──src
+│ ├── renderer -- renders before the old SPA 
+│ │   ├── +onBeforeRoute.ts -- first hook loaded, we use the url and store paths in pagecontext : will be rendered client/server on navigation 
+│ │   ├── app.ts -- See this as app.vue / creates the app : creates on server and updates on client if needed.
+│ │   ├── +onRenderHtml.ts -- loads after onBeforeRender(the name duh) See this as index.html / renders the html : server only
+│ │   └── +onRenderClient.ts -- loads on navigation : client only
+│ ├── pages -- routing
+│ │   ├── _error
+│ │   |   └── +Page -- will be rendered if throw exceptions
+│ │   ├── @slug and index
+│ │   │   ├── +Page.vue -- start page for the specifik route : client/server
+│ │   │   ├── +route.ts -- loads after +onBeforeRoute.ts and determit which route will be taken, can be set in +config if desired : client/server
+│ │   │   ├── +onBeforeRender.ts -- loads after +route and write code for that route before load pages : server only as default.
+│ │   |   ├── +config -- settings for files in the same hierarchy and bellow
+│ │   |   └── +Layout -- layout file, if not set it will pick rendere/LayoutDefault.ts
+│ │   └── index
+│ │       └── same as @layout. index is a folder that vps ignore so it's the root

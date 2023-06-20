@@ -2,7 +2,7 @@ import { dangerouslySkipEscape } from 'vite-plugin-ssr/server';
 import { PageContext } from './types';
 
 /**
- * Set page meta data
+ * Set page meta data from documentProps fetched from api
  * @param page
  */
 export function setPageMetaData(pageContext: PageContext) {

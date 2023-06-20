@@ -2,10 +2,10 @@ import type { Config } from 'vite-plugin-ssr/types'
 
 // https://vite-plugin-ssr.com/config
 export default {
-  passToClient: ['pageProps', 'title', 'initialStoreState', 'locale', 'user', 'market', 'documentProps', 'marketLocationCode'],
+  passToClient: ['pageProps', 'initialStoreState', 'locale', 'user', 'market', 'documentProps'],
   // https://vite-plugin-ssr.com/meta
   meta: {
-    // Create new config 'title'
+    // this is the default behavior, you can omit it
     onBeforeRender: {
       env: 'server-only'
     }

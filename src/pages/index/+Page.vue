@@ -3,7 +3,7 @@
         <div class="market-selector-page__content">
             <h1 class="market-selector-page__title">{{ t('common.header.location') }}</h1>
             <div class="market-selector-page__markets">
-                <div class="market-selector-page__markets__item" v-for="market in marketPages" :key="market.id">
+                <div class="market-selector-page__markets__item" v-for="(market, index) in marketPages" :key="index">
                     <Link :href="market.url">
                     <span>{{ market.name }}</span>
                     </Link>

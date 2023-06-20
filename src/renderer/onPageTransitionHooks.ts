@@ -6,12 +6,10 @@ function onHydrationEnd() {
   );
 }
 function onPageTransitionStart() {
-  console.log('Page transition start');
-
-  //document.querySelector('.content')!.classList.add('page-transition')
+  console.log('Page transition start, runs on client navigation start');
+  document.querySelector('.content')?.classList.add('page-transition');
 }
 function onPageTransitionEnd() {
-  console.log('Page transition end');
-
-  //document.querySelector('.content')!.classList.remove('page-transition');
+  console.log('Page transition end, runs on client navigation end');
+  document.querySelector('.content')?.classList.remove('page-transition');
 }

@@ -4,7 +4,6 @@ import { createSSRApp, defineComponent, h, markRaw, reactive } from 'vue'
 import { createPinia } from 'pinia'
 import i18n from '@/i18n';
 import { useCommonStore } from '@/stores/commonStore'
-import accountService from '@/services/accountService'
 import { initFlashMessage } from '@/models/flashMessage';
 import LayoutDefault from './LayoutDefault.vue'
 import { setPageContext } from './usePageContext'
@@ -63,10 +62,11 @@ function createApp(pageContext: PageContext) {
 
   // Add user to pageContext
   const commonStore = useCommonStore();
-  accountService.getUser(pageContext.locale).then((user) => {
-    commonStore.setUser(user); // TODO: store user in pinia
-  });
+  // store fake user to pinia
+  commonStore.setUser({name: 'fake user', email: 'fake@example.com'}); 
+  
 
+  // init flash message
   app.provide('$flashMessage', reactive(initFlashMessage()));
 
   // Install i18n with default language, see `+onBeforeRoute.ts`

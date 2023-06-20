@@ -12,7 +12,7 @@ import {setPageMetaData} from './pageMetaData'
 async function onRenderHtml(pageContext: PageContextBuiltIn & PageContext) {  
   const instance = createApp(pageContext)
   const stream = renderToNodeStream(instance.app)
-  const metaData = setPageMetaData(pageContext);
+  const metaData = setPageMetaData(pageContext) || '';
 
   const documentHtml = escapeInject`<!DOCTYPE html>
     <html lang="${pageContext?.documentProps?.language?.name || 'sv'}">

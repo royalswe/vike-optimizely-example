@@ -1,7 +1,5 @@
 <template>
     <div>
-        <notice-block v-for="(noticeBlock, index) in notices" :block="noticeBlock" :key="index" />
-        <notice-block v-for="(noticeBlock, index) in childNotices" :block="noticeBlock" :key="index" />
         <header-component>
             <template #headerLogo>
                 <Link :href="marketStartPage" class="c-compact-header__logo-link">
@@ -12,7 +10,7 @@
         <c-sidebar :sidebarId="'mainMenu'" :modifiers="[]">
             <template #header>
                 <Link :href="marketStartPage">
-                <img :src="'/static/img/sodra-logo-green.svg'" class="c-sidebar__logo" alt="logo" />
+                <img :src="'/static/img/logo.svg'" class="c-sidebar__logo" alt="logo" />
                 </Link>
                 <span class="js-toggle-open u-float-right" data-element-id="mainMenu">
                     <i class="material-icons c-sidebar__header-icon">close</i>
@@ -22,15 +20,14 @@
                 <c-sidebar-nav v-if="navMenu" :menus="navMenu.menuHeading">
                     <nav-items v-for="(item, index) in navMenu.items" :key="index" :item="item" />
                 </c-sidebar-nav>
-                <Link v-if="route.marketPageId && route.marketPagePath !== pageContext.urlPathname" :href="marketStartPage"
-                    class="o-button o-button--black u-full-width mt-3">
+                <Link class="o-button o-button--black u-full-width mt-3">
                 {{ t('common.header.tostartpage') }}
-                <img :src="'/static/img/sodra-icon-white.png'">
+                <img :src="'/static/img/logo.svg'">
                 </Link>
 
                 <span class="o-line o-line--thin o-line--grey mt-4 mb-3"></span>
                 <div class="u-float-right">
-                    <a href="/location" class="c-sidebar__location">
+                    <a href="/" class="c-sidebar__location">
                         {{ t('common.header.location') }}
                         <i class="material-icons">language</i>
                     </a>
@@ -64,7 +61,7 @@
         </c-sidebar>
 
         <client-only>
-            <h3>Everything between client-only tag, runs only on client side </h3>
+            <h3>Everything between client-only tag, runs only on client side only</h3>
         </client-only>
 
 
@@ -76,7 +73,6 @@
 <script setup lang="ts">
 import HeaderComponent from '@/components/HeaderComponent.vue';
 import FooterComponent from '@/components/FooterComponent.vue';
-import NoticeBlock from '@/components/blocks/NoticeBlock.vue';
 import NavItems from '@/components/NavItems.vue';
 
 import { CSidebar, CSidebarNav, CSocial } from '@sodraskog/unity/vue/Components';
@@ -89,7 +85,7 @@ import { usePageContext } from '@/renderer/usePageContext'
 import { ClientOnly } from '@/renderer/ClientOnly';
 import { initFlashMessage } from '@/models/flashMessage';
 
-defineProps(['navMenu', 'rootPage', 'notices', 'childNotices', 'route'])
+defineProps(['navMenu'])
 
 typeof window !== `undefined` && import("@sodraskog/unity/scripts/common/toggle-open").then((ToggleOpen) => {
     new ToggleOpen.default(document);
