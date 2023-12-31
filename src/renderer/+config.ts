@@ -1,18 +1,22 @@
-import type { Config } from 'vite-plugin-ssr/types'
-import { onHydrationEnd, onPageTransitionStart, onPageTransitionEnd } from './onPageTransitionHooks'
+import type { Config } from 'vike/types';
+import {
+  onHydrationEnd,
+  onPageTransitionStart,
+  onPageTransitionEnd,
+} from './onPageTransitionHooks';
 
-// https://vite-plugin-ssr.com/config
+// https://vike.dev/config
 export default {
-  passToClient: ['pageProps', 'locale'],
-  clientRouting: true, // enables client-side routing and make site a single-page application after the first page load
-  prefetchStaticAssets: 'viewport', // viewport, hover, false
+  passToClient: ['documentProps', 'locale'],
+  clientRouting: true,
+  prefetchStaticAssets: 'viewport', // viewport, hover, false TODO: compare hover with viewport in produktion (viewport only works in production)?
   onHydrationEnd,
   onPageTransitionStart,
   onPageTransitionEnd,
   // Here we can define which part should be rendered on server and which part on client
   meta: {
     Layout: {
-      env: 'server-and-client'
-    }
-  }
-} satisfies Config
+      env: { server: true, client: true }
+    },
+  },
+} satisfies Config;

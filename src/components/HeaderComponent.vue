@@ -1,5 +1,5 @@
 <template>
-  <c-compact-header :logoUrl="'/static/img/sodra-logo-green.svg'">
+  <c-compact-header :logoUrl="'/static/img/temp-logo-green.svg'">
     <template #headerStart>
       <span class="c-compact-header__button js-toggle-open" data-element-id="mainMenu">
         <i class="c-compact-header__button-icon material-icons">menu</i>
@@ -28,7 +28,6 @@
 </template>
 
 <script setup lang="ts">
-import { CCompactHeader } from "@sodraskog/unity/vue/Components";
 import { useCommonStore } from '@/stores/commonStore';
 
 const commonStore = useCommonStore();

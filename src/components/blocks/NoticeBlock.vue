@@ -1,5 +1,5 @@
 <template>
-  <div data-element-id="sodraNoticeBlock" class="c-alert" :class="'c-alert--' + block?.type + ' c-alert--flex'">
+  <div data-element-id="NoticeBlock" class="c-alert" :class="'c-alert--' + block?.type + ' c-alert--flex'">
     <span class="c-alert__icon">
       <span class="mdi" :class="icon"></span>
     </span>
@@ -12,7 +12,7 @@
         }}</a>
       </div>
     </div>
-    <span class="js-close-alert c-alert__close" data-element-id="sodraNoticeBlock" @click.prevent="block.onlyShowOnce">
+    <span class="js-close-alert c-alert__close" data-element-id="NoticeBlock" @click.prevent="block.onlyShowOnce">
     </span>
   </div>
 </template>

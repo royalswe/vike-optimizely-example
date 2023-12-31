@@ -3,7 +3,7 @@
         <header-component>
             <template #headerLogo>
                 <Link :href="marketStartPage" class="c-compact-header__logo-link">
-                <img :src="'/static/img/sodra-logo-green.svg'" class="c-compact-header__logo-image" alt="logo" />
+                <img :src="'/static/img/temp-logo-green.svg'" class="c-compact-header__logo-image" alt="logo" />
                 </Link>
             </template>
         </header-component>
@@ -75,8 +75,6 @@ import HeaderComponent from '@/components/HeaderComponent.vue';
 import FooterComponent from '@/components/FooterComponent.vue';
 import NavItems from '@/components/NavItems.vue';
 
-import { CSidebar, CSidebarNav, CSocial } from '@sodraskog/unity/vue/Components';
-import SocialItem from '@sodraskog/unity/models/SocialItem';
 
 import { onErrorCaptured, ref, inject } from 'vue';
 import { useI18n } from 'vue-i18n';
@@ -87,9 +85,6 @@ import { initFlashMessage } from '@/models/flashMessage';
 
 defineProps(['navMenu'])
 
-typeof window !== `undefined` && import("@sodraskog/unity/scripts/common/toggle-open").then((ToggleOpen) => {
-    new ToggleOpen.default(document);
-});
 
 const { t } = useI18n();
 const pageContext = usePageContext()

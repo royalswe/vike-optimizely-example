@@ -10,7 +10,6 @@
 <script setup lang="ts">
 import { inject } from 'vue';
 import { initFlashMessage } from '@/models/flashMessage';
-import CAlert from '@sodraskog/unity/vue/components/CAlert.vue';
 
 const $flashMessage = inject('$flashMessage', initFlashMessage());
 </script>

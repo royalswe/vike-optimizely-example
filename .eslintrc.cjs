@@ -19,6 +19,7 @@ module.exports = {
     '@typescript-eslint/no-explicit-any': 'off',
     'no-prototype-builtins': 'off',
     '@typescript-eslint/no-this-alias': 'off',
+    'vue/multi-word-component-names': 'off',
   },
   env: {
     'vue/setup-compiler-macros': true,
