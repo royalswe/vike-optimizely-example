@@ -15,8 +15,6 @@ import { addClickOutsideDirective } from '#src/directives/clickOutside.client';
 import { addFallbackImageDirective } from '#src/directives/fallbackImage.client';
 
 export default onRenderClient;
-process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = '0';
-
 let app: App<Element> & { changePage: (pageContext: PageContext) => void };
 
 async function onRenderClient(pageContext: PageContext) {

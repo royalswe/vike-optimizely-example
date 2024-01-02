@@ -1,8 +1,12 @@
 <template>
   <footer>
-    <p>&copy; {{ new Date().getFullYear() }} My Vue.js App</p>
+    <p>&copy; {{ dayjs().year() }} My Vue.js App</p>
   </footer>
 </template>
+
+<script setup lang="ts">
+import dayjs from 'dayjs';
+</script>
 
 <style scoped>
 footer {

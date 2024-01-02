@@ -12,9 +12,9 @@ async function onBeforeRender(pageContext: PageContext) {
       pageProps: {
         page: 'props from onBeforeRender',
         marketPages: [
-          { name: 'star wars', url: '/star-wars' },
-          { name: 'Hello page', url: '/hello/alice' },
-          { name: 'Swedens market', url: '/sv-se/slug' },
+          { name: 'Sweden', url: '/sv/se' },
+          { name: 'Great Britain', url: '/en/gb' },
+          { name: 'Denmark', url: '/dk/dk' },
         ],
       },
       documentProps: {

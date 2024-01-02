@@ -8,3 +8,8 @@ in code inside the project
 ### Copy certificate and key to cert folder
 
 Copy your certificate and key created by mkcert (created when running npm run dev) from C:\Users\[USER]\.vite-plugin-mkcert to the cert folder.
+
+### OR install mkcert (https://github.com/FiloSottile/mkcert)
+
+and then run: `mkcert localhost 127.0.0.1 ::1`
+this will generate localhost+2.pem and localhost+2-key.pem which you can rename

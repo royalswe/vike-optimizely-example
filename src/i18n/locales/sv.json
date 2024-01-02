@@ -1,5 +1,6 @@
 {
   "common": {
+    "greetings": "Välkommen",
     "readmore": "Läs mer",
     "st": "st",
     "loading": "Laddar...",

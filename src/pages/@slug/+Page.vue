@@ -7,57 +7,13 @@
                 </Link>
             </template>
         </header-component>
-        <c-sidebar :sidebarId="'mainMenu'" :modifiers="[]">
-            <template #header>
-                <Link :href="marketStartPage">
-                <img :src="'/static/img/logo.svg'" class="c-sidebar__logo" alt="logo" />
-                </Link>
-                <span class="js-toggle-open u-float-right" data-element-id="mainMenu">
-                    <i class="material-icons c-sidebar__header-icon">close</i>
-                </span>
-            </template>
-            <template #nav>
-                <c-sidebar-nav v-if="navMenu" :menus="navMenu.menuHeading">
-                    <nav-items v-for="(item, index) in navMenu.items" :key="index" :item="item" />
-                </c-sidebar-nav>
-                <Link class="o-button o-button--black u-full-width mt-3">
-                {{ t('common.header.tostartpage') }}
-                <img :src="'/static/img/logo.svg'">
-                </Link>
 
-                <span class="o-line o-line--thin o-line--grey mt-4 mb-3"></span>
-                <div class="u-float-right">
-                    <a href="/" class="c-sidebar__location">
-                        {{ t('common.header.location') }}
-                        <i class="material-icons">language</i>
-                    </a>
-                    <button type="button" class="c-sidebar__location js-modal-trigger" data-target="#selectStartPageModal">
-                        {{ t('common.header.selectstartpage') }}
-                        <i class="material-icons">home</i>
-                    </button>
-                </div>
-
-            </template>
-        </c-sidebar>
-        <c-sidebar :sidebarId="'loginMenu'" :modifiers="[
-            {
-                prefix: 'c-sidebar-container',
-                modifiers: ['right', 'yellow'],
-            },
-            {
-                prefix: 'c-sidebar',
-                modifiers: ['yellow'],
-            },
-        ]">
-            <template #header>
-                <i class="material-icons c-sidebar__header-icon">account_circle</i>
-                <span class="c-sidebar__toggle c-sidebar__toggle--close js-toggle-open u-float-right"
-                    data-element-id="loginMenu">
-                    <i class="material-icons c-sidebar__header-icon">close</i>
-                </span>
-            </template>
-
-        </c-sidebar>
+        <aside class="left-menu">
+            <div class="menu-header">
+                <h2>Menu</h2>
+            </div>
+            <nav-items v-for="(item, index) in navMenu" :key="index" :item="item" />
+        </aside>
 
         <client-only>
             <h3>Everything between client-only tag, runs only on client side only</h3>
@@ -68,6 +24,21 @@
 
     </div>
 </template>
+
+<style scoped>
+.left-menu {
+    width: 200px;
+    /* Adjust the width as needed */
+    height: 100%;
+    /* Adjust the background color as needed */
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Add any additional styling for NavItems component */
+</style>
 
 <script setup lang="ts">
 import HeaderComponent from '#src/components/HeaderComponent.vue';

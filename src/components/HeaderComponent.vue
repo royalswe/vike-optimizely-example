@@ -1,6 +1,6 @@
 <template>
   <header>
-    <h1>{{ t('common.header.menu') }}</h1>
+    <h1>{{ t('common.greetings') }}</h1>
     <nav>
       <ul>
         <!-- <li v-for="(link, index) in links" :key="index">{{ link }}</li> -->
@@ -28,6 +28,8 @@ header {
 
 h1 {
   margin: 0;
+  color: #fff;
+  font-family: sans-serif;
 }
 
 nav ul {

@@ -4,7 +4,6 @@ import path from 'path';
 import './config.js';
 import { IS_PRODUCTION, IS_AZURE, PORT } from './constants.js';
 import router from './routes/default.js';
-import api from './routes/api.js';
 
 startServer();
 
@@ -56,7 +55,6 @@ async function startServer() {
   });
 
   app.use(router);
-  app.use('/_api', api);
 
   // HTTPS: In production, Vite + vike is only a server middleware; there is nothing special to take into consideration.
   // If we want to use HTTPS in dev as well, then we need to pass the HTTPS certificates to Vite's dev server.
