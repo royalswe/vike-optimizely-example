@@ -37,7 +37,6 @@
                     </button>
                 </div>
 
-                <c-social :items="socialItems" />
             </template>
         </c-sidebar>
         <c-sidebar :sidebarId="'loginMenu'" :modifiers="[
@@ -71,56 +70,28 @@
 </template>
 
 <script setup lang="ts">
-import HeaderComponent from '@/components/HeaderComponent.vue';
-import FooterComponent from '@/components/FooterComponent.vue';
-import NavItems from '@/components/NavItems.vue';
+import HeaderComponent from '#src/components/HeaderComponent.vue';
+import FooterComponent from '#src/components/FooterComponent.vue';
+import NavItems from '#src/components/NavItems.vue';
 
 
 import { onErrorCaptured, ref, inject } from 'vue';
 import { useI18n } from 'vue-i18n';
-import Link from '@/renderer/Link.vue';
-import { usePageContext } from '@/renderer/usePageContext'
-import { ClientOnly } from '@/renderer/ClientOnly';
-import { initFlashMessage } from '@/models/flashMessage';
+import Link from '#src/renderer/Link.vue';
+import { usePageContext } from '#src/renderer/usePageContext';
+import { ClientOnly } from '#src/renderer/ClientOnly';
+import { initFlashMessage } from '#src/models/flashMessage';
 
-defineProps(['navMenu'])
+defineProps(['navMenu']);
 
 
 const { t } = useI18n();
-const pageContext = usePageContext()
+const pageContext = usePageContext();
 const $flashMessage = inject('$flashMessage', initFlashMessage());
 
 const marketStartPage = pageContext.market;
 
 const error = ref(false);
-
-const socialItems = [
-    new SocialItem({
-        url: 'https://www.facebook.com/',
-        title: 'Facebook',
-        text: 'Facebook',
-        name: 'facebook'
-    }),
-    new SocialItem({
-        url: 'https://twitter.com/',
-        title: 'Twitter',
-        text: 'Twitter',
-        name: 'twitter'
-    }),
-    new SocialItem({
-        url: 'https://www.linkedin.com/',
-        title: 'LinkedIn',
-        text: 'LinkedIn',
-        name: 'linkedin'
-    }),
-    new SocialItem({
-        url: 'https://www.instagram.com/',
-        title: 'Instagram',
-        text: 'Instagram',
-        name: 'instagram'
-    })
-];
-
 
 onErrorCaptured((callback) => {
     error.value = true;

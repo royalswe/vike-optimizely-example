@@ -2,17 +2,17 @@ import path from 'path';
 import { Router } from 'express';
 import { renderPage } from 'vike/server';
 import { fetchUser } from '../accountService.js';
-import { getCookieValue, getFullApiUrl, getVisitType } from '../utils.js';
+import { getCookieValue, getFullApiUrl } from '../utils.js';
 import {
   LANGUAGE_TO_REDIRECT_PAGES,
   MARKET_TO_REDIRECT_PAGES,
-  VISIT_TYPE,
 } from '../constants.js';
 
 const router = Router({});
 
 /* Market page */
 router.get('/', (req, res, next) => {
+  // Redirect to correct language if user has selected one
   const redirectStartPage =
     getCookieValue(req.headers.cookie, '.UserSelectedStartPageUrl') ||
     getCookieValue(req.headers.cookie, '.LastVisitedStartPageUrl') ||
@@ -112,12 +112,6 @@ router.get('*', async (req, res, next) => {
 
   const isPreview = req.query['preview'] === 'true';
   const isStyleApp = req.query['style'] === 'app';
-  const visitType = getVisitType(req);
-
-  // Add Content-Security-Policy
-  if (visitType != VISIT_TYPE.Internal && visitType != VISIT_TYPE.InternalLan) {
-    res.setHeader('Content-Security-Policy', "frame-ancestors 'self'");
-  }
 
   const user = await fetchUser(req.headers.cookie as string);
 
@@ -127,7 +121,6 @@ router.get('*', async (req, res, next) => {
     fullUrl: req.protocol + '://' + req.get('host') + req.originalUrl,
     urlOriginal: req.originalUrl,
     redirectTo: null,
-    visitType: visitType,
     isStyleApp: isStyleApp,
     requestCookie: req.headers.cookie,
     user,

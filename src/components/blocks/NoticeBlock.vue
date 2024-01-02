@@ -18,7 +18,7 @@
 </template>
 
 <script setup lang="ts">
-import type { NoticeBlock } from '@/models/blocks/local/noticeBlock';
+import type { NoticeBlock } from '#src/models/blocks/local/noticeBlock';
 
 const props = defineProps<{
   block: NoticeBlock;

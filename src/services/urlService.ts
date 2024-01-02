@@ -1,4 +1,3 @@
-import { mapUrlParams } from '#src/composable/mapUrlParams';
 import { isClientSide } from '#src/utils/ssrUtils';
 
 export default new (class UrlService {
@@ -128,56 +127,8 @@ export default new (class UrlService {
       'en'
     );
   }
-  /**
-   * Set url params, will replace url parameters with new ones.
-   * @param {Object} params
-   */
-  public setUrlParams(
-    params: { key: string; value: string | string[] }[]
-  ): void {
-    const url = new URL(window.location.href);
-    const query = new URLSearchParams(window.location.search);
-    params.forEach((param) => {
-      // if (!param.value) {
-      //   return console.error('Param values is empty');
-      // }
-      const key = mapUrlParams(param.key, true);
 
-      // Delete old param
-      query.delete(key);
-      const values: string[] | string = param.value;
-      if (!key || typeof key !== 'string') {
-        console.error(`${key} are not type of string`);
-      }
-
-      if (values && !Array.isArray(values)) {
-        if (query.has(key)) {
-          query.set(key, values);
-        } else {
-          return query.append(key, values);
-        }
-      } else if (values) {
-        for (let i = 0; i < values.length; i++) {
-          query.append(key, values[i]);
-        }
-      }
-    });
-
-    const queryString = query.toString();
-
-    // replce url with new one
-    window.history.replaceState(
-      '',
-      '',
-      queryString
-        ? `${url.origin}${url.pathname}?${query.toString()}`
-        : `${url.origin}${url.pathname}`
-    );
-  }
-
-  public extractUrlSegments(
-    url: string
-  ): {
+  public extractUrlSegments(url: string): {
     locale: string;
     market: string;
     urlWithoutMarketAndLocale: string;

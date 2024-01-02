@@ -10,9 +10,9 @@ import { setPageMetaData } from './pageMetaData';
 import { dangerouslySkipEscape } from 'vike/server';
 
 async function onRenderHtml(pageContext: PageContext) {
-  const instance = createApp(pageContext);
-  const stream = renderToNodeStream(instance.app);
-  const metaData = dangerouslySkipEscape(setPageMetaData(pageContext));
+  const instance = createApp(pageContext) ?? '';
+  const stream = renderToNodeStream(instance.app) ?? '';
+  const metaData = dangerouslySkipEscape(setPageMetaData(pageContext)) ?? '';
   const lazyScript = dangerouslySkipEscape(`<script>
     window.lazySizesConfig = window.lazySizesConfig || {};
     window.lazySizesConfig.srcAttr = 'data-lazy-src';
@@ -35,7 +35,6 @@ async function onRenderHtml(pageContext: PageContext) {
       ${lazyScript}
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <meta name="msvalidate.01" content="E8B6E6A6BD8992C5358F95817A12FEDF" />
       <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
       <link rel="icon" href="/static/img/favicon.svg" />
       ${cookieConsentScript}

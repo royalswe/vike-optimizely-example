@@ -7,13 +7,15 @@ import '#src/assets/main.scss';
 
 import { App } from 'vue';
 import lazyService from '#src/services/lazyService';
+
 import { setPageMetaData } from './pageMetaData';
-import cookieService from '#src/services/cookieService';
-import cookieName from '#src/constants/cookieName';
 import { updateLanguage } from '#src/i18n';
-import googleTagManagerService from '#src/services/googleTagManagerService';
+
+import { addClickOutsideDirective } from '#src/directives/clickOutside.client';
+import { addFallbackImageDirective } from '#src/directives/fallbackImage.client';
 
 export default onRenderClient;
+process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = '0';
 
 let app: App<Element> & { changePage: (pageContext: PageContext) => void };
 
@@ -36,17 +38,15 @@ async function onRenderClient(pageContext: PageContext) {
   // runs on hydration, meaning it will run on first page load
   if (pageContext.isHydration) {
     lazyService.addLazyBackgrounds();
-    
-    googleTagManagerService.init();
-    if (pageContext.user) {
-      googleTagManagerService.setGaUserData(pageContext.user);
-    }
-
-    if (cookieService.userConsentsToStatisticCookies()) {
-      cookieService.setCookie(cookieName.VisitType, pageContext.visitType);
-    }
+    // Custom directives
+    addClickOutsideDirective(app);
+    addFallbackImageDirective(app);
+    // if (cookieService.userConsentsToStatisticCookies()) {
+    //   cookieService.setCookie(cookieName.VisitType, pageContext.visitType);
+    // }
   } else {
     // runs on client side navigation
+    //
     // Set lang attribute on html element
     document.documentElement.lang = pageContext.locale;
     // Get page meta data as string
@@ -61,11 +61,10 @@ async function onRenderClient(pageContext: PageContext) {
 function addStyle(name: string, inlineStyle: string) {
   const existingTag = document.querySelector(`style[name=${name}]`);
 
-  // Add new style
   if (existingTag) {
     existingTag.remove();
   }
-
+  // Add new inline style
   if (inlineStyle) {
     const style = document.createElement('style');
     style.setAttribute('name', name);

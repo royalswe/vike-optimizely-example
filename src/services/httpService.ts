@@ -45,7 +45,7 @@ export default new (class HttpService {
     }
 
     return response.json().catch(() => {
-      return (response as unknown) as Promise<T>;
+      return response as unknown as Promise<T>;
     }) as Promise<T>;
   }
 

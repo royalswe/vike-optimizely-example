@@ -9,8 +9,6 @@ import { render } from 'vike/abort';
 export async function fetchPageHierarchy(language: string, isPreview = false) {
   try {
     const languageHeader = language ? { 'Accept-Language': language } : {};
-
-    // TODO: Remove VITE_ prefix when .server files only run on server to prevent client from having access to api key
     const pageHiearchy = await httpService
       .get(`/_api/pages/getpagehiearchy?isPreview=${isPreview}`, {
         headers: {

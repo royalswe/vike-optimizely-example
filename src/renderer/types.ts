@@ -5,10 +5,6 @@ export type { PageProps };
 export type { Component };
 export type { PageContextUrl };
 
-import type { SitePageData } from '#src/models/pages/sitePageData';
-import type { SettingsPage } from '#src/models/pages/settingsPage';
-
-
 import type {
   PageContextBuiltInServer,
   //*
@@ -44,11 +40,10 @@ type PageContextCustom = {
   initialStoreState?: any;
   user: any;
   currentPage?: any;
-  siteSettings: SettingsPage;
-  documentProps: SitePageData;
+  siteSettings: any;
+  documentProps: any;
   marketPageId: any;
   isPreview?: boolean;
-  visitType?: string;
   isStyleApp?: boolean;
   requestCookie?: string;
   isHydration: boolean;

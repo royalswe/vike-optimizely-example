@@ -16,10 +16,3 @@ export const MARKET_TO_REDIRECT_PAGES = Object.freeze({
   lv: '/lv/lv/',
   dk: '/da/dk/',
 });
-
-export const VISIT_TYPE = Object.freeze({
-  Internal: 'Internal',
-  InternalLan: 'InternalLan',
-  GuestWLAN: 'GuestWLAN',
-  External: 'External',
-});

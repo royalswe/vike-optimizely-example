@@ -9,7 +9,7 @@
 
 <script setup lang="ts">
 import { inject } from 'vue';
-import { initFlashMessage } from '@/models/flashMessage';
+import { initFlashMessage } from '#src/models/flashMessage';
 
 const $flashMessage = inject('$flashMessage', initFlashMessage());
 </script>

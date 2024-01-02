@@ -1,5 +1,5 @@
 <template>
-  <a v-bind="attributes">
+  <a v-bind="(attributes as AnchorHTMLAttributes)">
     <slot />
   </a>
 </template>
@@ -15,10 +15,10 @@ a.active {
 </style>
 <script lang="ts" setup>
 //https://vite-plugin-ssr.com/navigate
-import { useAttrs } from 'vue'
+import { AnchorHTMLAttributes, useAttrs } from 'vue';
 
-const { href } = useAttrs()
-const isAbsolute = /^https?:\/\//i.test(href)
+const { href } = useAttrs();
+const isAbsolute = /^https?:\/\//i.test(href as string);
 
 const attributes = {
   href,

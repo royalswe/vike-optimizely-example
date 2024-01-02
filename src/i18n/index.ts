@@ -8,11 +8,11 @@ import da from '#src/i18n/locales/da.json';
 import et from '#src/i18n/locales/et.json';
 import lv from '#src/i18n/locales/lv.json';
 
-import 'dayjs/locale/sv' // import locale
-import 'dayjs/locale/en' // import locale
-import 'dayjs/locale/da' // import locale
-import 'dayjs/locale/et' // import locale
-import 'dayjs/locale/lv' // import locale
+import 'dayjs/locale/sv'; // import locale
+import 'dayjs/locale/en'; // import locale
+import 'dayjs/locale/da'; // import locale
+import 'dayjs/locale/et'; // import locale
+import 'dayjs/locale/lv'; // import locale
 
 const languages = { sv, en, da, et, lv } as const;
 
@@ -28,8 +28,7 @@ export function i18n(defaultLang: PageContext['locale'] = 'en') {
       globalInjection: true,
     });
     dayjs.locale(defaultLang);
-  }
-  else {
+  } else {
     // i18n keeps the previous locale value on full page refresh, so we need to change it to the new visited page locale
     updateLanguage(defaultLang);
   }

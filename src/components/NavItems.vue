@@ -1,30 +1,28 @@
 <template>
   <li class="c-sidebar-nav__item" v-bind="subMenuAttr(!!item.children, isActive)">
-    <a :href="item.href" class="c-sidebar-nav__link"
-      :aria-current="item.href === pageContext.urlPathname ? 'page' : undefined">
+    <component :is="item.url ? 'a' : 'span'" :href="item.url" class="c-sidebar-nav__link"
+      :aria-current="item.url === pageContext.urlPathname ? 'page' : undefined">
       <content />
-    </a>
+    </component>
     <sub-menu />
   </li>
 </template>
   
 <script setup lang="ts">
 import { defineComponent, computed, h } from 'vue';
-import NavItem from '@/components/NavItems.vue';
-import { usePageContext } from '@/renderer/usePageContext'
+import NavItem from '#src/components/NavItems.vue';
+import { usePageContext } from '#src/renderer/usePageContext';
 
-const props = defineProps<{ item: any }>();
+const props = defineProps<{ item: any; }>();
+const pageContext = usePageContext();
 
-const pageContext = usePageContext()
-const { href } = props.item
 const isActive = computed(() => {
-
-  const { urlPathname } = pageContext
-  return href === '/' ? urlPathname === href : urlPathname.startsWith(href)
-})
+  const { urlPathname } = pageContext;
+  return props.item.url === '/' ? urlPathname === props.item.url : urlPathname.startsWith(props.item.url as string);
+});
 
 // a11y attributes for submenu
-const subMenuAttr = (submenu: boolean, isActive: boolean) => {
+const subMenuAttr: any = (submenu: boolean, isActive: boolean) => {
   if (submenu) {
     return {
       'aria-haspopup': 'true',
@@ -43,7 +41,7 @@ const content = defineComponent({
       props.item.children ? h('span', { class: 'c-sidebar-nav__symbol' }, [
         h('i', { class: 'material-symbols-outlined', innerHTML: 'keyboard_arrow_right' }),
       ]) : undefined
-    ]
+    ];
   }
 });
 
@@ -51,16 +49,16 @@ const content = defineComponent({
 const subMenu = defineComponent({
   setup() {
     return () => props.item.children && [
-      h('button', { class: 'c-sidebar-nav__open-submenu', 'aria-expanded': 'false' }, [
+      h('button', { 'type': 'button', class: 'c-sidebar-nav__open-submenu', 'aria-expanded': 'false' }, [
         h('i', { class: 'material-icons' }),
       ]),
       h('ul', { class: 'c-sidebar-nav__submenu' }, [
-        props.item.children.map(child => h(NavItem, {
+        props.item.children.map((child: { url: string; route: string; }) => h(NavItem, {
           key: child.url ?? child.route,
           item: child
         }))
       ])
-    ]
+    ];
   }
 });
 

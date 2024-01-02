@@ -1,6 +1,5 @@
 // https://vike.dev/onBeforeRender
 import type { PageContext } from '#src/renderer/types';
-import pressReleasesService from '#src/services/pressReleasesService';
 
 let pageHierarchyStore: any; // store the page hierarchy in memory
 
@@ -85,23 +84,8 @@ async function getPageByPath(pageContext: PageContext) {
         }
       );
 
-      if (
-        currentPage?.PageTypeName === 'PressReleasesPage' &&
-        currentPage.DetailsPage
-      ) {
-        // Get press release details page data
-        await pressReleasesService.getPressRelease(urlName).then((response) => {
-          currentPage = {
-            ...currentPage,
-            PageTypeName: 'PressReleasePage',
-            Name: response.title,
-            PressRelease: response,
-          };
-        });
-      } else {
-        parentPage = currentPage;
-        currentPage = childPage;
-      }
+      parentPage = currentPage;
+      currentPage = childPage;
 
       if (currentPage?.ShowInMenu) {
         breadcrumb.push({ title: currentPage.Name, path: pathName });

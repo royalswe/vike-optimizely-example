@@ -4,9 +4,7 @@ import vue from '@vitejs/plugin-vue';
 import mkcert from 'vite-plugin-mkcert';
 import vike from 'vike/plugin';
 
-export default defineConfig(({ mode }) => {
-  const env = loadEnv(mode, process.cwd()); // if you want to use .env files
-
+export default defineConfig(() => {
   return {
     plugins: [
       vue(),
@@ -18,7 +16,7 @@ export default defineConfig(({ mode }) => {
     ],
 
     // We manually add a list of dependencies to be pre-bundled, in order to avoid a page reload at dev start which breaks vite-plugin-ssr's CI
-    optimizeDeps: { include: ['cross-fetch'] },
+    //optimizeDeps: { include: ['cross-fetch'] },
 
     resolve: {
       alias: {

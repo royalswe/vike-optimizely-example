@@ -34,8 +34,6 @@ import { usePageContext } from '#src/renderer/usePageContext';
 import { PageContext } from '#src/renderer/types';
 import { runOnClient } from '#src/utils/ssrUtils';
 
-const StartPageSelector = defineAsyncComponent(() => import('#src/components/modals/StartPageSelectorComponent.vue'));
-
 defineProps(['navMenu', 'rootPage', 'notices', 'childNotices', 'route']);
 
 const { t } = useI18n();

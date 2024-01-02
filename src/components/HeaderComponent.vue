@@ -1,39 +1,44 @@
 <template>
-  <c-compact-header :logoUrl="'/static/img/temp-logo-green.svg'">
-    <template #headerStart>
-      <span class="c-compact-header__button js-toggle-open" data-element-id="mainMenu">
-        <i class="c-compact-header__button-icon material-icons">menu</i>
-        <span class="c-compact-header__button-label">Meny</span>
-      </span>
-    </template>
-    <template #headerCenter>
-      <slot name="headerLogo" />
-    </template>
-    <template #headerEnd>
-      <button v-if="commonStore.user"
-        class="c-compact-header__button c-compact-header__button--yellow js-toggle-open ms-3"
-        data-element-id="loggedInMenu">
-        <i class="c-compact-header__button-icon material-icons">account_circle</i>
-        <span class="c-compact-header__button-label"></span>
-      </button>
-      <button v-if="!commonStore.user"
-        class="c-compact-header__button c-compact-header__button--yellow js-toggle-open ms-3" data-element-id="loginMenu">
-        <i class="c-compact-header__button-icon material-icons">account_circle</i>
-        <span class="c-compact-header__button-label">
-          Login
-        </span>
-      </button>
-    </template>
-  </c-compact-header>
+  <header>
+    <h1>{{ t('common.header.menu') }}</h1>
+    <nav>
+      <ul>
+        <!-- <li v-for="(link, index) in links" :key="index">{{ link }}</li> -->
+      </ul>
+    </nav>
+  </header>
 </template>
 
 <script setup lang="ts">
-import { useCommonStore } from '@/stores/commonStore';
+import { usePageContext } from '#src/renderer/usePageContext';
+import { useI18n } from "vue-i18n";
 
-const commonStore = useCommonStore();
-
-
-
-
+const pageContext = usePageContext();
+const { t } = useI18n();
 
 </script>
+
+<style scoped>
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin: 0 10px;
+  cursor: pointer;
+}
+</style>

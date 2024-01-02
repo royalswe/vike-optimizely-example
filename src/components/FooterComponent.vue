@@ -1,11 +1,17 @@
 <template>
-  <div class="c-footer c-footer--background-light-grey">
-    <div class="container-fluid">
-      <div class="c-footer__inner">
-        <div class="row">
-          Just a footer
-        </div>
-      </div>
-    </div>
-  </div>
+  <footer>
+    <p>&copy; {{ new Date().getFullYear() }} My Vue.js App</p>
+  </footer>
 </template>
+
+<style scoped>
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+</style>

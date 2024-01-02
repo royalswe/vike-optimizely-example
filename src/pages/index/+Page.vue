@@ -15,9 +15,9 @@
 
 <script lang="ts" setup>
 import { useI18n } from 'vue-i18n';
-import Link from '@/renderer/Link.vue';
+import Link from '#src/renderer/Link.vue';
 
-defineProps(['page', 'marketPages'])
+defineProps(['page', 'marketPages']);
 
 const { t } = useI18n();
 

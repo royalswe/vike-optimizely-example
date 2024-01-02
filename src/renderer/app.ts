@@ -8,9 +8,6 @@ import LayoutDefault from './LayoutDefault.vue';
 import { setPageContext } from './usePageContext';
 import '#src/extensions/arrayExtensions';
 import '#src/extensions/stringExtensions';
-import { addClickOutsideDirective } from '#src/directives/clickOutside';
-import { addFallbackImageDirective } from '#src/directives/fallbackImage.client';
-
 
 /**
  * Create a Vue App instance for the given `pageContext`.
@@ -43,10 +40,6 @@ function createApp(pageContext: PageContext) {
 
   const app = createSSRApp(PageWithWrapper);
 
-  // Custom directives
-  addClickOutsideDirective(app);
-  addFallbackImageDirective(app);
-
   // We use `app.changePage()` to do Client Routing, see `+onRenderClient.ts`
   objectAssign(app, {
     changePage: (pageContext: PageContext) => {
@@ -63,12 +56,12 @@ function createApp(pageContext: PageContext) {
   const pageContextReactive = reactive(pageContext);
   setPageContext(app, pageContextReactive);
 
-  // TODO: Pinia will probably be used for search terms later, otherwise remove
   // Install Pinia
   const store = createPinia();
   app.use(store);
-  // Install i18n with current page language` 
-  app.use(i18n(pageContext.locale));    
+  // Install i18n with current page language`
+  app.use(i18n(pageContext.locale));
+  // Initialize flash message with default values
   app.provide('$flashMessage', reactive(initFlashMessage()));
 
   return { app, store };

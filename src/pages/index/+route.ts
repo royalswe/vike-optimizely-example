@@ -1,8 +1,9 @@
 export default function route(pageContext: { urlPathname: string }) {
-  // If the path is market then go to start page
+  // If it is market page
   if (
     pageContext.urlPathname === '/' ||
-    pageContext.urlPathname === '/market'
+    pageContext.urlPathname === '/location' ||
+    pageContext.urlPathname === '/location/'
   ) {
     return true;
   }
