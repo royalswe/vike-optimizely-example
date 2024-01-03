@@ -14,13 +14,19 @@ const server = setupServer(
   http.get(
     import.meta.env.VITE_API_BASE_URL +
       '/_api/pages/getstartpageorsettingspageproperties/*',
-    ({ request, params, cookies }) => {
+    () => {
       return HttpResponse.json(siteSettings);
     }
   ),
+  http.get(import.meta.env.VITE_API_BASE_URL + '/api/episerver/*', () => {
+    return HttpResponse.json(siteSettings);
+  }),
+  http.get(import.meta.env.VITE_API_BASE_URL + '/_api/notices/*', () => {
+    return HttpResponse.json(null);
+  }),
   http.get(
-    import.meta.env.VITE_API_BASE_URL + '/api/episerver/*',
-    ({ request, params, cookies }) => {
+    import.meta.env.VITE_API_BASE_URL + '/api/episerver/v2.0/content/*',
+    () => {
       return HttpResponse.json(siteSettings);
     }
   )

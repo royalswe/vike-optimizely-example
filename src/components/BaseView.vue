@@ -1,5 +1,10 @@
 <template>
     <div>
+        <client-only>
+            <notice-block v-for="(noticeBlock, index) in notices" :block="noticeBlock" :key="index" />
+            <notice-block v-for="(noticeBlock, index) in childNotices" :block="noticeBlock" :key="index" />
+        </client-only>
+
         <header-component>
             <template #headerLogo>
                 <Link :href="marketStartPage" class="c-compact-header__logo-link">
@@ -34,6 +39,7 @@ import { usePageContext } from '#src/renderer/usePageContext';
 import { PageContext } from '#src/renderer/types';
 import { runOnClient } from '#src/utils/ssrUtils';
 
+const NoticeBlock = defineAsyncComponent(() => import('#src/components/blocks/NoticeBlock.vue'));
 const StartPageSelector = defineAsyncComponent(() => import('#src/components/modals/StartPageSelectorComponent.vue'));
 
 defineProps(['navMenu', 'rootPage', 'notices', 'childNotices', 'route']);

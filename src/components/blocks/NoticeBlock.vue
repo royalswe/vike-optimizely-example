@@ -18,10 +18,17 @@
 </template>
 
 <script setup lang="ts">
-import type { NoticeBlock } from '#src/models/blocks/local/noticeBlock';
 
 const props = defineProps<{
-  block: NoticeBlock;
+  block: {
+    type: string;
+    content: string;
+    link: {
+      value: string;
+    };
+    linkText: string;
+    onlyShowOnce: boolean;
+  }
 }>();
 
 let icon = "mdi-close-circle";

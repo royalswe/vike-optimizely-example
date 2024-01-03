@@ -1,0 +1,1563 @@
+{
+  "contentLink": {
+    "id": 42900,
+    "workId": 0,
+    "guidValue": "c1cb50c0-b5ad-42ad-b88a-384c8fe0ba57",
+    "url": "https://localdevui.sodra.com:3000/sv/se/"
+  },
+  "name": "Sverige",
+  "existingLanguages": [
+    {
+      "link": "https://localdevui.sodra.com:3000/sv/se/",
+      "displayName": "Svenska",
+      "name": "sv"
+    }
+  ],
+  "contentType": ["Page", "FlexStartPage"],
+  "routeSegment": "se",
+  "url": "https://localdevui.sodra.com:3000/sv/se/",
+  "category": [],
+  "mainContent": [
+    {
+      "displayOption": "",
+      "contentLink": {
+        "id": 64868,
+        "workId": 0,
+        "guidValue": "5e3dbaaf-3c41-4b78-9578-06504b19f622",
+        "expanded": {
+          "contentLink": {
+            "id": 64868,
+            "workId": 0,
+            "guidValue": "5e3dbaaf-3c41-4b78-9578-06504b19f622"
+          },
+          "name": "Karusell Startsida",
+          "existingLanguages": [
+            {
+              "displayName": "Svenska",
+              "name": "sv"
+            }
+          ],
+          "contentType": ["Block", "CarouselBlock"],
+          "category": [],
+          "items": [
+            {
+              "displayOption": "",
+              "contentLink": {
+                "id": 61881,
+                "workId": 0,
+                "guidValue": "e5432dda-30c3-4092-86d9-62ef07ca2374",
+                "expanded": {
+                  "contentLink": {
+                    "id": 61881,
+                    "workId": 0,
+                    "guidValue": "e5432dda-30c3-4092-86d9-62ef07ca2374"
+                  },
+                  "name": "Vimeo Film",
+                  "existingLanguages": [
+                    {
+                      "displayName": "Svenska",
+                      "name": "sv"
+                    }
+                  ],
+                  "contentType": ["Block", "BannerBlock"],
+                  "category": [],
+                  "text": "<h1>Framtiden &auml;r gjord av tr&auml;d.</h1>\n<p>F&ouml;rnybar r&aring;vara fr&aring;n v&aring;ra medlemmars skogar blir tr&auml;varor, byggsystem, pappers- och&nbsp;dissolvingmassa, drivmedel, energi och mycket mer.&nbsp;<br />V&auml;lkommen till S&ouml;dra.</p>\n<p>&nbsp;</p>",
+                  "textColor": "White",
+                  "textWidth": "TwoThird",
+                  "textHorizontalPosition": "Left",
+                  "textVerticalPosition": "Center",
+                  "height": "Auto",
+                  "overlay": "Dark",
+                  "showVideo": true,
+                  "videoModal": true,
+                  "vimeoId": "76979871",
+                  "playVideoText": "Jag är en Vimeo",
+                  "hasMarginBottom": false
+                }
+              }
+            },
+            {
+              "displayOption": "",
+              "contentLink": {
+                "id": 113738,
+                "workId": 0,
+                "guidValue": "d2497093-58e1-4c11-b826-bd82442fdf06",
+                "expanded": {
+                  "contentLink": {
+                    "id": 113738,
+                    "workId": 0,
+                    "guidValue": "d2497093-58e1-4c11-b826-bd82442fdf06"
+                  },
+                  "name": "video",
+                  "existingLanguages": [
+                    {
+                      "displayName": "Svenska",
+                      "name": "sv"
+                    }
+                  ],
+                  "contentType": ["Block", "BannerBlock"],
+                  "category": [],
+                  "textColor": "None",
+                  "height": "Auto",
+                  "showVideo": true,
+                  "backgroundVideo": {
+                    "id": 113740,
+                    "workId": 0,
+                    "guidValue": "ee50fa6e-0cae-4975-b289-d41721a28112",
+                    "url": "/globalassets/1.-sverige/sodra_header_v3_low.mp4"
+                  },
+                  "videoModal": true,
+                  "playVideoText": "lets go",
+                  "backgroundColor": "None",
+                  "hasMarginBottom": false,
+                  "hasContainer": false
+                }
+              }
+            },
+            {
+              "displayOption": "",
+              "contentLink": {
+                "id": 113739,
+                "workId": 0,
+                "guidValue": "4fd42fa5-885d-4d18-a9cd-ba5a45922bfc",
+                "expanded": {
+                  "contentLink": {
+                    "id": 113739,
+                    "workId": 0,
+                    "guidValue": "4fd42fa5-885d-4d18-a9cd-ba5a45922bfc"
+                  },
+                  "name": "YouTube",
+                  "existingLanguages": [
+                    {
+                      "displayName": "Svenska",
+                      "name": "sv"
+                    }
+                  ],
+                  "contentType": ["Block", "BannerBlock"],
+                  "category": [],
+                  "textColor": "None",
+                  "height": "Auto",
+                  "showVideo": true,
+                  "youtubeId": "yci475Vwc10",
+                  "videoModal": true,
+                  "backgroundColor": "None",
+                  "hasMarginBottom": false,
+                  "hasContainer": false
+                }
+              }
+            }
+          ],
+          "carouselType": "Carousel",
+          "autoPlay": true,
+          "hasMarginBottom": true
+        }
+      }
+    },
+    {
+      "displayOption": "",
+      "contentLink": {
+        "id": 42909,
+        "workId": 0,
+        "guidValue": "266f0192-2e54-47de-90c6-d14cbd9059bb",
+        "expanded": {
+          "contentLink": {
+            "id": 42909,
+            "workId": 0,
+            "guidValue": "266f0192-2e54-47de-90c6-d14cbd9059bb"
+          },
+          "name": "Sektion Områden",
+          "existingLanguages": [
+            {
+              "displayName": "Svenska",
+              "name": "sv"
+            }
+          ],
+          "contentType": ["Block", "SectionBlock"],
+          "category": [],
+          "content": [
+            {
+              "displayOption": "displaymode-one-third",
+              "contentLink": {
+                "id": 42918,
+                "workId": 0,
+                "guidValue": "ff23f509-00b3-4d73-afdb-bcf4260fd86c",
+                "expanded": {
+                  "contentLink": {
+                    "id": 42918,
+                    "workId": 0,
+                    "guidValue": "ff23f509-00b3-4d73-afdb-bcf4260fd86c"
+                  },
+                  "name": "Sektion 1 Skog och medlem",
+                  "existingLanguages": [
+                    {
+                      "displayName": "Svenska",
+                      "name": "sv"
+                    }
+                  ],
+                  "contentType": ["Block", "SectionBlock"],
+                  "category": [],
+                  "content": [
+                    {
+                      "displayOption": "",
+                      "contentLink": {
+                        "id": 113745,
+                        "workId": 0,
+                        "guidValue": "b83c868e-2ce9-4534-bcf1-cba750cd823e",
+                        "expanded": {
+                          "contentLink": {
+                            "id": 113745,
+                            "workId": 0,
+                            "guidValue": "b83c868e-2ce9-4534-bcf1-cba750cd823e"
+                          },
+                          "name": "vimeo film",
+                          "existingLanguages": [
+                            {
+                              "displayName": "Svenska",
+                              "name": "sv"
+                            }
+                          ],
+                          "contentType": ["Block", "BannerBlock"],
+                          "category": [],
+                          "image": {
+                            "id": 113744,
+                            "workId": 0,
+                            "guidValue": "c86bcc12-cf75-49ff-8b81-7e038761f894",
+                            "url": "/globalassets/gamla-webben/fotoware/2023/12/2023-08-21-8243.jpg"
+                          },
+                          "imageAltText": "Kampanjbilder från kampanjen Skogslandslaget. Mathilda Clausen Wingårdh medlem i Södra",
+                          "textColor": "None",
+                          "height": "Pixels350",
+                          "showVideo": false,
+                          "videoModal": true,
+                          "vimeoId": "76979871",
+                          "playVideoText": "Visa video i pop-up",
+                          "backgroundColor": "None",
+                          "hasMarginBottom": false,
+                          "hasContainer": false
+                        }
+                      }
+                    },
+                    {
+                      "displayOption": "",
+                      "contentLink": {
+                        "id": 113746,
+                        "workId": 0,
+                        "guidValue": "b09bff8a-fedb-4303-980a-811b8f4db3eb",
+                        "expanded": {
+                          "contentLink": {
+                            "id": 113746,
+                            "workId": 0,
+                            "guidValue": "b09bff8a-fedb-4303-980a-811b8f4db3eb"
+                          },
+                          "name": "text",
+                          "existingLanguages": [
+                            {
+                              "displayName": "Svenska",
+                              "name": "sv"
+                            }
+                          ],
+                          "contentType": ["Block", "TextAndImageBlock"],
+                          "category": [],
+                          "imagePosition": "Left",
+                          "imagePadding": false,
+                          "text": "<p><span style=\"background-color: #ffffff; font-weight: bold;\">Vad &auml;r r&auml;tt tr&auml;skyddsklass?</span></p>",
+                          "textColor": "None",
+                          "textBackgroundColor": "None",
+                          "hasMarginBottom": false,
+                          "hasContainer": false
+                        }
+                      }
+                    }
+                  ],
+                  "hasContainer": true,
+                  "displayOption": "displaymode-one-third"
+                }
+              }
+            },
+            {
+              "displayOption": "displaymode-one-third",
+              "contentLink": {
+                "id": 42919,
+                "workId": 0,
+                "guidValue": "2b075a28-3742-432c-b0ef-5ab46624a4b9",
+                "expanded": {
+                  "contentLink": {
+                    "id": 42919,
+                    "workId": 0,
+                    "guidValue": "2b075a28-3742-432c-b0ef-5ab46624a4b9"
+                  },
+                  "name": "Sektion 2 trä",
+                  "existingLanguages": [
+                    {
+                      "displayName": "Svenska",
+                      "name": "sv"
+                    }
+                  ],
+                  "contentType": ["Block", "SectionBlock"],
+                  "category": [],
+                  "content": [
+                    {
+                      "displayOption": "",
+                      "contentLink": {
+                        "id": 42938,
+                        "workId": 0,
+                        "guidValue": "57cf6d31-d2a9-4290-8eee-e0457ce6ed07",
+                        "expanded": {
+                          "contentLink": {
+                            "id": 42938,
+                            "workId": 0,
+                            "guidValue": "57cf6d31-d2a9-4290-8eee-e0457ce6ed07"
+                          },
+                          "name": "Bild Trä",
+                          "existingLanguages": [
+                            {
+                              "displayName": "Svenska",
+                              "name": "sv"
+                            }
+                          ],
+                          "contentType": ["Block", "FlexImageBlock"],
+                          "category": [],
+                          "image": {
+                            "id": 42953,
+                            "workId": 0,
+                            "guidValue": "f7c6442f-04dd-45e3-bef2-1ae68cf7b493",
+                            "url": "/globalassets/fotoware2/2020/6/2020-04-24-219.jpg"
+                          },
+                          "imageAltText": "Trä",
+                          "link": [
+                            {
+                              "href": "https://localdevui.sodra.com:3000/sv/se/tra/",
+                              "text": "Trä",
+                              "contentLink": {
+                                "id": 47254,
+                                "workId": 0,
+                                "guidValue": "8e2dbd31-ccfc-4a6d-a59c-10f10bf4b9df",
+                                "url": "https://localdevui.sodra.com:3000/sv/se/tra/"
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "displayOption": "",
+                      "contentLink": {
+                        "id": 42939,
+                        "workId": 0,
+                        "guidValue": "d8904053-1fcd-4b7f-aa7b-0740f8934743",
+                        "expanded": {
+                          "contentLink": {
+                            "id": 42939,
+                            "workId": 0,
+                            "guidValue": "d8904053-1fcd-4b7f-aa7b-0740f8934743"
+                          },
+                          "name": "Länk 2",
+                          "existingLanguages": [
+                            {
+                              "displayName": "Svenska",
+                              "name": "sv"
+                            }
+                          ],
+                          "contentType": ["Block", "TextBlock"],
+                          "category": [],
+                          "text": "<h3 class=\"t-heading-4\"><a title=\"Tr&auml;\" href=\"https://localdevui.sodra.com:3000/sv/se/tra/?utm_source=website&amp;utm_medium=puffar&amp;utm_campaign=a-version&amp;utm_ab-test=a-ABtestStartsida2021\">Tr&auml;</a></h3>"
+                        }
+                      }
+                    }
+                  ],
+                  "hasContainer": true,
+                  "displayOption": "displaymode-one-third"
+                }
+              }
+            },
+            {
+              "displayOption": "displaymode-one-third",
+              "contentLink": {
+                "id": 42920,
+                "workId": 0,
+                "guidValue": "81bf3402-33db-4a73-94bb-25050b99f047",
+                "expanded": {
+                  "contentLink": {
+                    "id": 42920,
+                    "workId": 0,
+                    "guidValue": "81bf3402-33db-4a73-94bb-25050b99f047"
+                  },
+                  "name": "Sektion 3 byggsystem",
+                  "existingLanguages": [
+                    {
+                      "displayName": "Svenska",
+                      "name": "sv"
+                    }
+                  ],
+                  "contentType": ["Block", "SectionBlock"],
+                  "category": [],
+                  "content": [
+                    {
+                      "displayOption": "",
+                      "contentLink": {
+                        "id": 42940,
+                        "workId": 0,
+                        "guidValue": "35f0b6ab-e693-486b-914c-70aaba3c7145",
+                        "expanded": {
+                          "contentLink": {
+                            "id": 42940,
+                            "workId": 0,
+                            "guidValue": "35f0b6ab-e693-486b-914c-70aaba3c7145"
+                          },
+                          "name": "Bild 3 byggsystem",
+                          "existingLanguages": [
+                            {
+                              "displayName": "Svenska",
+                              "name": "sv"
+                            }
+                          ],
+                          "contentType": ["Block", "FlexImageBlock"],
+                          "category": [],
+                          "image": {
+                            "id": 42954,
+                            "workId": 0,
+                            "guidValue": "5714cd8f-5d24-4c42-9f89-37ff9e80892e",
+                            "url": "/globalassets/fotoware2/2020/6/hero-sbs-2020052.jpg"
+                          },
+                          "imageAltText": "Byggsystem",
+                          "link": [
+                            {
+                              "href": "https://localdevui.sodra.com:3000/sv/se/byggsystem/",
+                              "text": "Byggsystem",
+                              "contentLink": {
+                                "id": 49043,
+                                "workId": 0,
+                                "guidValue": "f697d220-3662-4b08-a2e7-fe73032e9e22",
+                                "url": "https://localdevui.sodra.com:3000/sv/se/byggsystem/"
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "displayOption": "",
+                      "contentLink": {
+                        "id": 42941,
+                        "workId": 0,
+                        "guidValue": "1972c9ba-722d-4a14-89ac-4d2d6c824b8f",
+                        "expanded": {
+                          "contentLink": {
+                            "id": 42941,
+                            "workId": 0,
+                            "guidValue": "1972c9ba-722d-4a14-89ac-4d2d6c824b8f"
+                          },
+                          "name": "Länk 3",
+                          "existingLanguages": [
+                            {
+                              "displayName": "Svenska",
+                              "name": "sv"
+                            }
+                          ],
+                          "contentType": ["Block", "TextBlock"],
+                          "category": [],
+                          "text": "<h3 class=\"t-heading-4\"><a title=\"Byggsystem\" href=\"https://localdevui.sodra.com:3000/sv/se/byggsystem/?utm_source=website&amp;utm_medium=puffar&amp;utm_campaign=a-version&amp;utm_ab-test=a-ABtestStartsida2021\">Byggsystem</a></h3>"
+                        }
+                      }
+                    }
+                  ],
+                  "hasContainer": true,
+                  "displayOption": "displaymode-one-third"
+                }
+              }
+            },
+            {
+              "displayOption": "displaymode-one-third",
+              "contentLink": {
+                "id": 42921,
+                "workId": 0,
+                "guidValue": "cc2421f1-4c44-45ec-8ae8-c9d8125281c7",
+                "expanded": {
+                  "contentLink": {
+                    "id": 42921,
+                    "workId": 0,
+                    "guidValue": "cc2421f1-4c44-45ec-8ae8-c9d8125281c7"
+                  },
+                  "name": "Sektion 4 massa",
+                  "existingLanguages": [
+                    {
+                      "displayName": "Svenska",
+                      "name": "sv"
+                    }
+                  ],
+                  "contentType": ["Block", "SectionBlock"],
+                  "category": [],
+                  "content": [
+                    {
+                      "displayOption": "",
+                      "contentLink": {
+                        "id": 42942,
+                        "workId": 0,
+                        "guidValue": "22c761d8-18be-49b7-aa98-ee2c60fd8b85",
+                        "expanded": {
+                          "contentLink": {
+                            "id": 42942,
+                            "workId": 0,
+                            "guidValue": "22c761d8-18be-49b7-aa98-ee2c60fd8b85"
+                          },
+                          "name": "Bild 4 Massa",
+                          "existingLanguages": [
+                            {
+                              "displayName": "Svenska",
+                              "name": "sv"
+                            }
+                          ],
+                          "contentType": ["Block", "FlexImageBlock"],
+                          "category": [],
+                          "image": {
+                            "id": 42955,
+                            "workId": 0,
+                            "guidValue": "0c78485a-72c7-46f5-860d-e39f695debe2",
+                            "url": "/globalassets/fotoware2/2020/6/hero-cell-202005.jpg"
+                          },
+                          "imageAltText": "Massa",
+                          "link": [
+                            {
+                              "href": "https://localdevui.sodra.com:3000/sv/se/massa/",
+                              "text": "Massa",
+                              "contentLink": {
+                                "id": 47612,
+                                "workId": 0,
+                                "guidValue": "91796810-1f86-4c3d-a98c-8a839ab2b367",
+                                "url": "https://localdevui.sodra.com:3000/sv/se/massa/"
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "displayOption": "",
+                      "contentLink": {
+                        "id": 42943,
+                        "workId": 0,
+                        "guidValue": "595719fe-c0ac-446c-ac49-c52ecf8f6032",
+                        "expanded": {
+                          "contentLink": {
+                            "id": 42943,
+                            "workId": 0,
+                            "guidValue": "595719fe-c0ac-446c-ac49-c52ecf8f6032"
+                          },
+                          "name": "Länk 4",
+                          "existingLanguages": [
+                            {
+                              "displayName": "Svenska",
+                              "name": "sv"
+                            }
+                          ],
+                          "contentType": ["Block", "TextBlock"],
+                          "category": [],
+                          "text": "<h3 class=\"t-heading-4\"><a title=\"Massa\" href=\"https://localdevui.sodra.com:3000/sv/se/massa/?utm_source=website&amp;utm_medium=puffar&amp;utm_campaign=a-version&amp;utm_ab-test=a-ABtestStartsida2021\">Massa</a></h3>"
+                        }
+                      }
+                    }
+                  ],
+                  "displayOption": "displaymode-one-third"
+                }
+              }
+            },
+            {
+              "displayOption": "displaymode-one-third",
+              "contentLink": {
+                "id": 42922,
+                "workId": 0,
+                "guidValue": "16897a36-95ce-4b92-8bd9-1594764db51b",
+                "expanded": {
+                  "contentLink": {
+                    "id": 42922,
+                    "workId": 0,
+                    "guidValue": "16897a36-95ce-4b92-8bd9-1594764db51b"
+                  },
+                  "name": "Sektion 5 bioprodukter",
+                  "existingLanguages": [
+                    {
+                      "displayName": "Svenska",
+                      "name": "sv"
+                    }
+                  ],
+                  "contentType": ["Block", "SectionBlock"],
+                  "category": [],
+                  "content": [
+                    {
+                      "displayOption": "",
+                      "contentLink": {
+                        "id": 42944,
+                        "workId": 0,
+                        "guidValue": "82c761d4-f7d8-4cd4-b2c8-dc86d6f9d596",
+                        "expanded": {
+                          "contentLink": {
+                            "id": 42944,
+                            "workId": 0,
+                            "guidValue": "82c761d4-f7d8-4cd4-b2c8-dc86d6f9d596"
+                          },
+                          "name": "Bild 5 Bioprodukter",
+                          "existingLanguages": [
+                            {
+                              "displayName": "Svenska",
+                              "name": "sv"
+                            }
+                          ],
+                          "contentType": ["Block", "FlexImageBlock"],
+                          "category": [],
+                          "image": {
+                            "id": 42956,
+                            "workId": 0,
+                            "guidValue": "eeba87f4-b769-4aed-98b2-cbc771a13c34",
+                            "url": "/globalassets/fotoware2/2020/6/hero-bioproducts-202005.jpg"
+                          },
+                          "imageAltText": "Bioprodukter",
+                          "link": [
+                            {
+                              "href": "https://localdevui.sodra.com:3000/sv/se/bioprodukter/",
+                              "text": "Bioprodukter",
+                              "contentLink": {
+                                "id": 42960,
+                                "workId": 0,
+                                "guidValue": "f3f436a0-134b-440d-9aa4-45f23777c089",
+                                "url": "https://localdevui.sodra.com:3000/sv/se/bioprodukter/"
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "displayOption": "",
+                      "contentLink": {
+                        "id": 42945,
+                        "workId": 0,
+                        "guidValue": "bb509fda-c941-4e28-93ce-cc5ceda597cb",
+                        "expanded": {
+                          "contentLink": {
+                            "id": 42945,
+                            "workId": 0,
+                            "guidValue": "bb509fda-c941-4e28-93ce-cc5ceda597cb"
+                          },
+                          "name": "Länk 5",
+                          "existingLanguages": [
+                            {
+                              "displayName": "Svenska",
+                              "name": "sv"
+                            }
+                          ],
+                          "contentType": ["Block", "TextBlock"],
+                          "category": [],
+                          "text": "<h3 class=\"t-heading-4\"><a title=\"Bioprodukter\" href=\"https://localdevui.sodra.com:3000/sv/se/bioprodukter/?utm_source=website&amp;utm_medium=puffar&amp;utm_campaign=a-version&amp;utm_ab-test=a-ABtestStartsida2021\">Bioprodukter</a></h3>"
+                        }
+                      }
+                    }
+                  ],
+                  "displayOption": "displaymode-one-third"
+                }
+              }
+            },
+            {
+              "displayOption": "displaymode-one-third",
+              "contentLink": {
+                "id": 42923,
+                "workId": 0,
+                "guidValue": "e30919c7-148a-4825-b8c6-100a5d577acb",
+                "expanded": {
+                  "contentLink": {
+                    "id": 42923,
+                    "workId": 0,
+                    "guidValue": "e30919c7-148a-4825-b8c6-100a5d577acb"
+                  },
+                  "name": "Sektion 6 Energi",
+                  "existingLanguages": [
+                    {
+                      "displayName": "Svenska",
+                      "name": "sv"
+                    }
+                  ],
+                  "contentType": ["Block", "SectionBlock"],
+                  "category": [],
+                  "content": [
+                    {
+                      "displayOption": "",
+                      "contentLink": {
+                        "id": 42946,
+                        "workId": 0,
+                        "guidValue": "8e88198d-ec2c-4b1e-881c-b63902e85f2e",
+                        "expanded": {
+                          "contentLink": {
+                            "id": 42946,
+                            "workId": 0,
+                            "guidValue": "8e88198d-ec2c-4b1e-881c-b63902e85f2e"
+                          },
+                          "name": "Bild 6 Energi",
+                          "existingLanguages": [
+                            {
+                              "displayName": "Svenska",
+                              "name": "sv"
+                            }
+                          ],
+                          "contentType": ["Block", "FlexImageBlock"],
+                          "category": [],
+                          "image": {
+                            "id": 42957,
+                            "workId": 0,
+                            "guidValue": "5e556924-9386-4b33-b18a-6da3d19e6810",
+                            "url": "/globalassets/fotoware2/2020/6/soodramedlemsel_skogsbild_elkontakt2.jpg"
+                          },
+                          "imageAltText": "Energi",
+                          "link": [
+                            {
+                              "href": "https://localdevui.sodra.com:3000/sv/se/energi/",
+                              "text": "Energi",
+                              "contentLink": {
+                                "id": 43262,
+                                "workId": 0,
+                                "guidValue": "f259369e-524f-4328-a0da-807c10574c65",
+                                "url": "https://localdevui.sodra.com:3000/sv/se/energi/"
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "displayOption": "",
+                      "contentLink": {
+                        "id": 42947,
+                        "workId": 0,
+                        "guidValue": "7a3ebaf3-1b4c-4ff4-83a9-3d4034fe20b8",
+                        "expanded": {
+                          "contentLink": {
+                            "id": 42947,
+                            "workId": 0,
+                            "guidValue": "7a3ebaf3-1b4c-4ff4-83a9-3d4034fe20b8"
+                          },
+                          "name": "Länk 6",
+                          "existingLanguages": [
+                            {
+                              "displayName": "Svenska",
+                              "name": "sv"
+                            }
+                          ],
+                          "contentType": ["Block", "TextBlock"],
+                          "category": [],
+                          "text": "<h3 class=\"t-heading-4\"><a title=\"Energi\" href=\"https://localdevui.sodra.com:3000/sv/se/energi/?utm_source=website&amp;utm_medium=puffar&amp;utm_campaign=a-version&amp;utm_ab-test=a-ABtestStartsida2021\">Energi</a></h3>"
+                        }
+                      }
+                    }
+                  ],
+                  "displayOption": "displaymode-one-third"
+                }
+              }
+            },
+            {
+              "displayOption": "displaymode-one-quarter",
+              "contentLink": {
+                "id": 93649,
+                "workId": 0,
+                "guidValue": "63865b1d-104b-4e9f-b1d0-a8b2a75c9a00",
+                "expanded": {
+                  "contentLink": {
+                    "id": 93649,
+                    "workId": 0,
+                    "guidValue": "63865b1d-104b-4e9f-b1d0-a8b2a75c9a00"
+                  },
+                  "name": "Sektion Innovation",
+                  "existingLanguages": [
+                    {
+                      "displayName": "Svenska",
+                      "name": "sv"
+                    }
+                  ],
+                  "contentType": ["Block", "SectionBlock"],
+                  "category": [],
+                  "content": [
+                    {
+                      "displayOption": "",
+                      "contentLink": {
+                        "id": 93647,
+                        "workId": 0,
+                        "guidValue": "ab766e6f-5164-403f-8cec-a6114a787f1d",
+                        "expanded": {
+                          "contentLink": {
+                            "id": 93647,
+                            "workId": 0,
+                            "guidValue": "ab766e6f-5164-403f-8cec-a6114a787f1d"
+                          },
+                          "name": "Bild  Innovation",
+                          "existingLanguages": [
+                            {
+                              "displayName": "Svenska",
+                              "name": "sv"
+                            }
+                          ],
+                          "contentType": ["Block", "FlexImageBlock"],
+                          "category": [],
+                          "image": {
+                            "id": 93652,
+                            "workId": 0,
+                            "guidValue": "4849e78f-6149-41b7-b7b0-07ed2da981ca",
+                            "url": "/globalassets/gamla-webben/fotoware/2021/12/2020-11-04-6072.jpg"
+                          },
+                          "imageAltText": "Innovation",
+                          "link": [
+                            {
+                              "href": "https://localdevui.sodra.com:3000/sv/se/innovation/",
+                              "text": "Innovation",
+                              "contentLink": {
+                                "id": 96173,
+                                "workId": 0,
+                                "guidValue": "fe041d9d-1ebf-4199-80ee-a5fb442e5808",
+                                "url": "https://localdevui.sodra.com:3000/sv/se/innovation/"
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "displayOption": "",
+                      "contentLink": {
+                        "id": 93648,
+                        "workId": 0,
+                        "guidValue": "832fb053-d863-4ee6-b23d-234906034ef4",
+                        "expanded": {
+                          "contentLink": {
+                            "id": 93648,
+                            "workId": 0,
+                            "guidValue": "832fb053-d863-4ee6-b23d-234906034ef4"
+                          },
+                          "name": "Länk innovation",
+                          "existingLanguages": [
+                            {
+                              "displayName": "Svenska",
+                              "name": "sv"
+                            }
+                          ],
+                          "contentType": ["Block", "TextBlock"],
+                          "category": [],
+                          "text": "<h3 class=\"t-heading-4\"><a title=\"Innovation\" href=\"https://localdevui.sodra.com:3000/sv/se/innovation/?utm_source=website&amp;utm_medium=puffar&amp;utm_campaign=a-version&amp;utm_ab-test=a-ABtestStartsida2021\">Innovation</a></h3>",
+                          "textColor": "None",
+                          "backgroundColor": "None",
+                          "hasMarginBottom": false,
+                          "hasContainer": false
+                        }
+                      }
+                    }
+                  ],
+                  "hasContainer": true,
+                  "displayOption": "displaymode-one-third"
+                }
+              }
+            },
+            {
+              "displayOption": "displaymode-one-quarter",
+              "contentLink": {
+                "id": 42924,
+                "workId": 0,
+                "guidValue": "5388cb83-d9ef-4967-8032-2c482fd614fe",
+                "expanded": {
+                  "contentLink": {
+                    "id": 42924,
+                    "workId": 0,
+                    "guidValue": "5388cb83-d9ef-4967-8032-2c482fd614fe"
+                  },
+                  "name": "Sektion 7 Hållbarhet",
+                  "existingLanguages": [
+                    {
+                      "displayName": "Svenska",
+                      "name": "sv"
+                    }
+                  ],
+                  "contentType": ["Block", "SectionBlock"],
+                  "category": [],
+                  "content": [
+                    {
+                      "displayOption": "",
+                      "contentLink": {
+                        "id": 42948,
+                        "workId": 0,
+                        "guidValue": "f18df94a-765d-4f6f-aab0-58771ac5a925",
+                        "expanded": {
+                          "contentLink": {
+                            "id": 42948,
+                            "workId": 0,
+                            "guidValue": "f18df94a-765d-4f6f-aab0-58771ac5a925"
+                          },
+                          "name": "Bild 7 Hållbarhet",
+                          "existingLanguages": [
+                            {
+                              "displayName": "Svenska",
+                              "name": "sv"
+                            }
+                          ],
+                          "contentType": ["Block", "FlexImageBlock"],
+                          "category": [],
+                          "image": {
+                            "id": 42958,
+                            "workId": 0,
+                            "guidValue": "59a8d13a-7a05-4f99-91b1-2b50fc2ae1ec",
+                            "url": "/globalassets/fotoware2/2020/6/plantor-14.jpg"
+                          },
+                          "imageAltText": "Hållbarhet",
+                          "link": [
+                            {
+                              "href": "https://localdevui.sodra.com:3000/sv/se/hallbarhet/",
+                              "text": "Hållbarhet",
+                              "contentLink": {
+                                "id": 43432,
+                                "workId": 0,
+                                "guidValue": "b9ea45e1-ee14-4a7a-a3cc-27593751e78b",
+                                "url": "https://localdevui.sodra.com:3000/sv/se/hallbarhet/"
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "displayOption": "",
+                      "contentLink": {
+                        "id": 42949,
+                        "workId": 0,
+                        "guidValue": "bc8dfd1f-3409-4102-bccd-9aec8802d0a9",
+                        "expanded": {
+                          "contentLink": {
+                            "id": 42949,
+                            "workId": 0,
+                            "guidValue": "bc8dfd1f-3409-4102-bccd-9aec8802d0a9"
+                          },
+                          "name": "Länk 7",
+                          "existingLanguages": [
+                            {
+                              "displayName": "Svenska",
+                              "name": "sv"
+                            }
+                          ],
+                          "contentType": ["Block", "TextBlock"],
+                          "category": [],
+                          "text": "<h3 class=\"t-heading-4\"><a title=\"H&aring;llbarhet\" href=\"https://localdevui.sodra.com:3000/sv/se/hallbarhet/?utm_source=website&amp;utm_medium=puffar&amp;utm_campaign=a-version&amp;utm_ab-test=a-ABtestStartsida2021\">H&aring;llbarhet</a></h3>"
+                        }
+                      }
+                    }
+                  ],
+                  "displayOption": "displaymode-one-third"
+                }
+              }
+            },
+            {
+              "displayOption": "displaymode-one-quarter",
+              "contentLink": {
+                "id": 42925,
+                "workId": 0,
+                "guidValue": "848a639f-a700-4712-97db-69e6e3386de9",
+                "expanded": {
+                  "contentLink": {
+                    "id": 42925,
+                    "workId": 0,
+                    "guidValue": "848a639f-a700-4712-97db-69e6e3386de9"
+                  },
+                  "name": "Sektion 8 Om Södra",
+                  "existingLanguages": [
+                    {
+                      "displayName": "Svenska",
+                      "name": "sv"
+                    }
+                  ],
+                  "contentType": ["Block", "SectionBlock"],
+                  "category": [],
+                  "content": [
+                    {
+                      "displayOption": "",
+                      "contentLink": {
+                        "id": 42950,
+                        "workId": 0,
+                        "guidValue": "22787b32-30f2-4cfe-8ea4-c464d7a65deb",
+                        "expanded": {
+                          "contentLink": {
+                            "id": 42950,
+                            "workId": 0,
+                            "guidValue": "22787b32-30f2-4cfe-8ea4-c464d7a65deb"
+                          },
+                          "name": "Bild 8 Om Södra",
+                          "existingLanguages": [
+                            {
+                              "displayName": "Svenska",
+                              "name": "sv"
+                            }
+                          ],
+                          "contentType": ["Block", "FlexImageBlock"],
+                          "category": [],
+                          "image": {
+                            "id": 42959,
+                            "workId": 0,
+                            "guidValue": "7cb3995c-d47e-45ff-99d3-125fd7f520aa",
+                            "url": "/globalassets/fotoware2/2020/6/hero-omsodra-202005.jpg"
+                          },
+                          "imageAltText": "Om Södra",
+                          "link": [
+                            {
+                              "href": "https://localdevui.sodra.com:3000/sv/se/om-sodra/",
+                              "text": "Om Södra",
+                              "contentLink": {
+                                "id": 43732,
+                                "workId": 0,
+                                "guidValue": "8f97d0ad-7a2e-41b1-afa6-2c6cd4bd8122",
+                                "url": "https://localdevui.sodra.com:3000/sv/se/om-sodra/"
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "displayOption": "",
+                      "contentLink": {
+                        "id": 42951,
+                        "workId": 0,
+                        "guidValue": "48238fb6-e7e3-4c89-b4ed-9cb673fad0bb",
+                        "expanded": {
+                          "contentLink": {
+                            "id": 42951,
+                            "workId": 0,
+                            "guidValue": "48238fb6-e7e3-4c89-b4ed-9cb673fad0bb"
+                          },
+                          "name": "Länk 8",
+                          "existingLanguages": [
+                            {
+                              "displayName": "Svenska",
+                              "name": "sv"
+                            }
+                          ],
+                          "contentType": ["Block", "TextBlock"],
+                          "category": [],
+                          "text": "<h3 class=\"t-heading-4\"><a title=\"Om S&ouml;dra\" href=\"https://localdevui.sodra.com:3000/sv/se/om-sodra/?utm_source=website&amp;utm_medium=puffar&amp;utm_campaign=a-version&amp;utm_ab-test=a-ABtestStartsida2021\">Om S&ouml;dra</a></h3>"
+                        }
+                      }
+                    }
+                  ],
+                  "displayOption": "displaymode-one-third"
+                }
+              }
+            },
+            {
+              "displayOption": "displaymode-one-quarter",
+              "contentLink": {
+                "id": 56670,
+                "workId": 0,
+                "guidValue": "34ef389f-29f4-47f4-9217-d9d3623676f5",
+                "expanded": {
+                  "contentLink": {
+                    "id": 56670,
+                    "workId": 0,
+                    "guidValue": "34ef389f-29f4-47f4-9217-d9d3623676f5"
+                  },
+                  "name": "Sektion 9 karriär",
+                  "existingLanguages": [
+                    {
+                      "displayName": "Svenska",
+                      "name": "sv"
+                    }
+                  ],
+                  "contentType": ["Block", "SectionBlock"],
+                  "category": [],
+                  "content": [
+                    {
+                      "displayOption": "",
+                      "contentLink": {
+                        "id": 56667,
+                        "workId": 0,
+                        "guidValue": "5b33b091-c551-43b7-91de-6b2ffbb6ba49",
+                        "expanded": {
+                          "contentLink": {
+                            "id": 56667,
+                            "workId": 0,
+                            "guidValue": "5b33b091-c551-43b7-91de-6b2ffbb6ba49"
+                          },
+                          "name": "Bild 9 karriär",
+                          "existingLanguages": [
+                            {
+                              "displayName": "Svenska",
+                              "name": "sv"
+                            }
+                          ],
+                          "contentType": ["Block", "FlexImageBlock"],
+                          "category": [],
+                          "image": {
+                            "id": 110874,
+                            "workId": 0,
+                            "guidValue": "60465f5e-1daf-461d-9d85-3a1679fc095a",
+                            "url": "/globalassets/gamla-webben/fotoware/2022/11/2022-11-07-452.jpg"
+                          },
+                          "imageAltText": "Karriär",
+                          "link": [
+                            {
+                              "href": "https://karriar.sodra.com/?utm_source=website&utm_medium=puffar&utm_campaign=A%2FB+test+startsida+2021%2F12&utm_content=a-version",
+                              "target": "_blank",
+                              "text": "Karriär på Södra"
+                            }
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "displayOption": "",
+                      "contentLink": {
+                        "id": 56669,
+                        "workId": 0,
+                        "guidValue": "28aad11e-0793-44c3-af95-31489f750f7a",
+                        "expanded": {
+                          "contentLink": {
+                            "id": 56669,
+                            "workId": 0,
+                            "guidValue": "28aad11e-0793-44c3-af95-31489f750f7a"
+                          },
+                          "name": "Länk 9",
+                          "existingLanguages": [
+                            {
+                              "displayName": "Svenska",
+                              "name": "sv"
+                            }
+                          ],
+                          "contentType": ["Block", "TextBlock"],
+                          "category": [],
+                          "text": "<h3 class=\"t-heading-4\"><a title=\"Karri&auml;r p&aring; S&ouml;dra\" href=\"https://karriar.sodra.com/?utm_source=website&amp;utm_medium=puffar&amp;utm_campaign=a-version&amp;utm_ab-test=a-ABtestStartsida2021\" target=\"_blank\" rel=\"noopener\">Karri&auml;r</a></h3>"
+                        }
+                      }
+                    }
+                  ],
+                  "displayOption": "displaymode-one-third"
+                }
+              }
+            }
+          ],
+          "hasMarginBottom": true,
+          "hasContainer": true
+        }
+      }
+    },
+    {
+      "displayOption": "",
+      "contentLink": {
+        "id": 66196,
+        "workId": 0,
+        "guidValue": "f2c2fa18-5b58-45b6-87b3-080afecec91c",
+        "expanded": {
+          "contentLink": {
+            "id": 66196,
+            "workId": 0,
+            "guidValue": "f2c2fa18-5b58-45b6-87b3-080afecec91c"
+          },
+          "name": "Startpuffar för Sverige",
+          "existingLanguages": [
+            {
+              "displayName": "Svenska",
+              "name": "sv"
+            }
+          ],
+          "contentType": ["Block", "PuffLinkContainerBlock"],
+          "category": [],
+          "itemWidth": "Three",
+          "items": [
+            {
+              "displayOption": "",
+              "contentLink": {
+                "id": 66198,
+                "workId": 0,
+                "guidValue": "2939bbcb-d245-4b02-b54a-c49028936ad1",
+                "expanded": {
+                  "contentLink": {
+                    "id": 66198,
+                    "workId": 0,
+                    "guidValue": "2939bbcb-d245-4b02-b54a-c49028936ad1"
+                  },
+                  "name": "Puff1: Med världen som marknad",
+                  "existingLanguages": [
+                    {
+                      "displayName": "Svenska",
+                      "name": "sv"
+                    }
+                  ],
+                  "contentType": ["Block", "PuffLinkItemBlock"],
+                  "category": [],
+                  "title": "Med världen som marknad",
+                  "text": "<p>S&ouml;dra &auml;r en stor skogsindustrikoncern som skapar produkter och tj&auml;nster f&ouml;r en global marknad och bidrar till tillv&auml;xten i svensk ekonomi.&nbsp;Vi har kontroll &ouml;ver hela v&auml;rdekedjan fr&aring;n fr&ouml; till kund och verkar f&ouml;r en h&aring;llbar utveckling i alla led. Vi satsar ocks&aring; strategiskt p&aring; innovation f&ouml;r att utveckla nya h&aring;llbara och klimatsmarta produkter baserade p&aring; den f&ouml;rnybara skogsr&aring;varan.</p>",
+                  "list": [
+                    {
+                      "href": "https://localdevui.sodra.com:3000/sv/se/om-sodra/",
+                      "text": "Om Södra",
+                      "contentLink": {
+                        "id": 43732,
+                        "workId": 0,
+                        "guidValue": "8f97d0ad-7a2e-41b1-afa6-2c6cd4bd8122",
+                        "url": "https://localdevui.sodra.com:3000/sv/se/om-sodra/"
+                      }
+                    },
+                    {
+                      "href": "https://localdevui.sodra.com:3000/sv/se/hallbarhet/",
+                      "text": "Hållbarhet en del av vår strategi",
+                      "contentLink": {
+                        "id": 43432,
+                        "workId": 0,
+                        "guidValue": "b9ea45e1-ee14-4a7a-a3cc-27593751e78b",
+                        "url": "https://localdevui.sodra.com:3000/sv/se/hallbarhet/"
+                      }
+                    },
+                    {
+                      "href": "https://localdevui.sodra.com:3000/sv/se/innovation/",
+                      "text": "Innovation och utveckling",
+                      "contentLink": {
+                        "id": 96173,
+                        "workId": 0,
+                        "guidValue": "fe041d9d-1ebf-4199-80ee-a5fb442e5808",
+                        "url": "https://localdevui.sodra.com:3000/sv/se/innovation/"
+                      }
+                    },
+                    {
+                      "href": "https://localdevui.sodra.com:3000/sv/se/om-sodra/pressrum/",
+                      "text": "Pressrum",
+                      "contentLink": {
+                        "id": 43761,
+                        "workId": 0,
+                        "guidValue": "d400f42e-7658-41f7-a1cd-449bd2084c75",
+                        "url": "https://localdevui.sodra.com:3000/sv/se/om-sodra/pressrum/"
+                      }
+                    },
+                    {
+                      "href": "https://karriar.sodra.com/?utm_source=website&utm_medium=puffar&utm_campaign=A%2FB+test+startsida+2021%2F12&utm_content=a-version",
+                      "target": "_blank",
+                      "text": "Karriär"
+                    }
+                  ],
+                  "titleLink": [
+                    {
+                      "href": "https://localdevui.sodra.com:3000/sv/se/om-sodra/",
+                      "text": "Med världen som marknad",
+                      "contentLink": {
+                        "id": 43732,
+                        "workId": 0,
+                        "guidValue": "8f97d0ad-7a2e-41b1-afa6-2c6cd4bd8122",
+                        "url": "https://localdevui.sodra.com:3000/sv/se/om-sodra/"
+                      }
+                    }
+                  ],
+                  "titleLinkUrl": "https://localdev.sodra.com/sv/se/om-sodra/",
+                  "titleLinkText": "Med världen som marknad"
+                }
+              }
+            },
+            {
+              "displayOption": "",
+              "contentLink": {
+                "id": 66199,
+                "workId": 0,
+                "guidValue": "7502538d-ca11-4069-aacc-4cc791a36e43",
+                "expanded": {
+                  "contentLink": {
+                    "id": 66199,
+                    "workId": 0,
+                    "guidValue": "7502538d-ca11-4069-aacc-4cc791a36e43"
+                  },
+                  "name": "Puff2: Skogsbruk i generationer",
+                  "existingLanguages": [
+                    {
+                      "displayName": "Svenska",
+                      "name": "sv"
+                    }
+                  ],
+                  "contentType": ["Block", "PuffLinkItemBlock"],
+                  "category": [],
+                  "title": "Skogsbruk i generationer",
+                  "text": "<p>Som medlem i S&ouml;dra &auml;r du b&aring;de skogs&auml;gare och del&auml;gare i en skogsindustrikoncern. Och du &auml;r i gott s&auml;llskap. S&ouml;dra &auml;r en ekonomisk f&ouml;rening med 52 000 medlemmar med skogsfastigheter &ouml;ver hela s&ouml;dra Sverige. Alla bidrar till verksamheten, p&aring;verkar framtiden, delar p&aring; vinsten och hj&auml;lps &aring;t att skapa de b&auml;sta f&ouml;ruts&auml;ttningarna f&ouml;r ett l&aring;ngsiktigt och h&aring;llbart skogsbruk. Ett skogsbruk som alla vinner p&aring;.</p>",
+                  "list": [
+                    {
+                      "href": "https://localdevui.sodra.com:3000/sv/se/skog-medlem/medlem-i-sodra/hur-fungerar-sodra/",
+                      "text": "Hur fungerar Södra",
+                      "contentLink": {
+                        "id": 45209,
+                        "workId": 0,
+                        "guidValue": "1d24df67-d5f5-427e-afb6-5af83df2f698",
+                        "url": "https://localdevui.sodra.com:3000/sv/se/skog-medlem/medlem-i-sodra/hur-fungerar-sodra/"
+                      }
+                    },
+                    {
+                      "href": "https://localdevui.sodra.com:3000/sv/se/skog-medlem/medlem-i-sodra/bli-medlem/",
+                      "text": "Bli medlem i Södra",
+                      "contentLink": {
+                        "id": 45221,
+                        "workId": 0,
+                        "guidValue": "7fd9dc1c-4dce-44d9-bd8b-7435a6e59a33",
+                        "url": "https://localdevui.sodra.com:3000/sv/se/skog-medlem/medlem-i-sodra/bli-medlem/"
+                      }
+                    },
+                    {
+                      "href": "https://localdevui.sodra.com:3000/sv/se/skog-medlem/skogsbruk/",
+                      "text": "Skogsbruk",
+                      "contentLink": {
+                        "id": 45225,
+                        "workId": 0,
+                        "guidValue": "55a556be-d792-46c2-b461-8a5da35ae9b8",
+                        "url": "https://localdevui.sodra.com:3000/sv/se/skog-medlem/skogsbruk/"
+                      }
+                    },
+                    {
+                      "href": "https://localdevui.sodra.com:3000/sv/se/skog-medlem/skogsbruk/salja-virke/",
+                      "text": "Sälja virke",
+                      "contentLink": {
+                        "id": 45274,
+                        "workId": 0,
+                        "guidValue": "b96ad18c-c87a-4525-96a7-dcdd58124b02",
+                        "url": "https://localdevui.sodra.com:3000/sv/se/skog-medlem/skogsbruk/salja-virke/"
+                      }
+                    },
+                    {
+                      "href": "https://localdevui.sodra.com:3000/sv/se/skog-medlem/skogsbruk/utveckla-ditt-skogsbruk/agarskifte-och-skogsekonomi/",
+                      "text": "Ägarskifte",
+                      "contentLink": {
+                        "id": 45261,
+                        "workId": 0,
+                        "guidValue": "5b782f7d-7c5e-4575-93e3-3ebbba0b564c",
+                        "url": "https://localdevui.sodra.com:3000/sv/se/skog-medlem/skogsbruk/utveckla-ditt-skogsbruk/agarskifte-och-skogsekonomi/"
+                      }
+                    }
+                  ],
+                  "titleLink": [
+                    {
+                      "href": "https://localdevui.sodra.com:3000/sv/se/skog-medlem/",
+                      "text": "Skogsbruk i generationer",
+                      "contentLink": {
+                        "id": 45206,
+                        "workId": 0,
+                        "guidValue": "43dd2c81-b2a4-45cd-a560-e92939ffeb07",
+                        "url": "https://localdevui.sodra.com:3000/sv/se/skog-medlem/"
+                      }
+                    }
+                  ],
+                  "titleLinkUrl": "https://localdev.sodra.com/sv/se/skog-medlem/",
+                  "titleLinkText": "Skogsbruk i generationer"
+                }
+              }
+            },
+            {
+              "displayOption": "",
+              "contentLink": {
+                "id": 66200,
+                "workId": 0,
+                "guidValue": "31d58ccd-d29f-4969-83ef-43d67af1d38f",
+                "expanded": {
+                  "contentLink": {
+                    "id": 66200,
+                    "workId": 0,
+                    "guidValue": "31d58ccd-d29f-4969-83ef-43d67af1d38f"
+                  },
+                  "name": "Puff3: Våra hållbara produkter",
+                  "existingLanguages": [
+                    {
+                      "displayName": "Svenska",
+                      "name": "sv"
+                    }
+                  ],
+                  "contentType": ["Block", "PuffLinkItemBlock"],
+                  "category": [],
+                  "title": "Våra hållbara produkter",
+                  "text": "<p>Tr&auml;produkter och pappersmassa har i generationer hj&auml;lpt till att bygga v&aring;rt lands v&auml;lst&aring;nd. Idag forts&auml;tter vi att f&ouml;rfina skogens produkter, men vi uppt&auml;cker samtidigt nya, sp&auml;nnande anv&auml;ndningsomr&aring;den f&ouml;r den f&ouml;rnybara r&aring;varan. Byggsystem, biodrivmedel och dissolvingmassa &auml;r n&aring;gra exempel. Vi tar vara p&aring; hela tr&auml;det. Och ser till att det sker p&aring; ett s&auml;tt som g&ouml;r st&ouml;rsta m&ouml;jliga nytta f&ouml;r alla.</p>",
+                  "list": [
+                    {
+                      "href": "https://localdevui.sodra.com:3000/sv/se/massa/",
+                      "text": "Massatillverkning i världsklass",
+                      "contentLink": {
+                        "id": 47612,
+                        "workId": 0,
+                        "guidValue": "91796810-1f86-4c3d-a98c-8a839ab2b367",
+                        "url": "https://localdevui.sodra.com:3000/sv/se/massa/"
+                      }
+                    },
+                    {
+                      "href": "https://localdevui.sodra.com:3000/sv/se/tra/",
+                      "text": "Trävaror för industri och bygghandel",
+                      "contentLink": {
+                        "id": 47254,
+                        "workId": 0,
+                        "guidValue": "8e2dbd31-ccfc-4a6d-a59c-10f10bf4b9df",
+                        "url": "https://localdevui.sodra.com:3000/sv/se/tra/"
+                      }
+                    },
+                    {
+                      "href": "https://localdevui.sodra.com:3000/sv/se/byggsystem/",
+                      "text": "Byggsystem i massivträ",
+                      "contentLink": {
+                        "id": 49043,
+                        "workId": 0,
+                        "guidValue": "f697d220-3662-4b08-a2e7-fe73032e9e22",
+                        "url": "https://localdevui.sodra.com:3000/sv/se/byggsystem/"
+                      }
+                    },
+                    {
+                      "href": "https://localdevui.sodra.com:3000/sv/se/bioprodukter/",
+                      "text": "Bioprodukter",
+                      "contentLink": {
+                        "id": 42960,
+                        "workId": 0,
+                        "guidValue": "f3f436a0-134b-440d-9aa4-45f23777c089",
+                        "url": "https://localdevui.sodra.com:3000/sv/se/bioprodukter/"
+                      }
+                    },
+                    {
+                      "href": "https://localdevui.sodra.com:3000/sv/se/energi/",
+                      "text": "Grön energi från skogen",
+                      "contentLink": {
+                        "id": 43262,
+                        "workId": 0,
+                        "guidValue": "f259369e-524f-4328-a0da-807c10574c65",
+                        "url": "https://localdevui.sodra.com:3000/sv/se/energi/"
+                      }
+                    }
+                  ],
+                  "titleLink": [
+                    {
+                      "href": "https://localdevui.sodra.com:3000/sv/se/hallbarhet/",
+                      "text": "Våra hållbara produkter",
+                      "contentLink": {
+                        "id": 43432,
+                        "workId": 0,
+                        "guidValue": "b9ea45e1-ee14-4a7a-a3cc-27593751e78b",
+                        "url": "https://localdevui.sodra.com:3000/sv/se/hallbarhet/"
+                      }
+                    }
+                  ],
+                  "titleLinkUrl": "https://localdev.sodra.com/sv/se/hallbarhet/",
+                  "titleLinkText": "Våra hållbara produkter"
+                }
+              }
+            }
+          ],
+          "hasMarginBottom": false,
+          "hasContainer": true
+        }
+      }
+    },
+    {
+      "displayOption": "",
+      "contentLink": {
+        "id": 42908,
+        "workId": 0,
+        "guidValue": "1aef0bef-9157-45c7-8e72-6cc970cd6026",
+        "expanded": {
+          "contentLink": {
+            "id": 42908,
+            "workId": 0,
+            "guidValue": "1aef0bef-9157-45c7-8e72-6cc970cd6026"
+          },
+          "name": "Rad",
+          "existingLanguages": [
+            {
+              "displayName": "Svenska",
+              "name": "sv"
+            }
+          ],
+          "contentType": ["Block", "TextBlock"],
+          "category": [],
+          "textColor": "White",
+          "backgroundColor": "White"
+        }
+      }
+    },
+    {
+      "displayOption": "",
+      "contentLink": {
+        "id": 42910,
+        "workId": 0,
+        "guidValue": "de2e691c-c6e9-444e-a0b5-93b71e122eae",
+        "expanded": {
+          "contentLink": {
+            "id": 42910,
+            "workId": 0,
+            "guidValue": "de2e691c-c6e9-444e-a0b5-93b71e122eae"
+          },
+          "name": "Nyheter startsidan/Om Södra",
+          "existingLanguages": [
+            {
+              "displayName": "Svenska",
+              "name": "sv"
+            }
+          ],
+          "contentType": ["Block", "NewsListBlock"],
+          "category": [],
+          "header": "Nyheter",
+          "metaSubject": "sk1",
+          "maxNumberOfSlides": 4,
+          "hideMetaSubjectFilter": true,
+          "newsListPage": {
+            "id": 2012,
+            "workId": 0,
+            "guidValue": "55ec7d4b-34df-4d0d-9427-1bf996641f8c",
+            "url": "https://localdevui.sodra.com:3000/sv/se/om-sodra/nyheter/"
+          },
+          "hideMetaUnitFilter": true,
+          "pressReleasesPage": {
+            "id": 57036,
+            "workId": 0,
+            "guidValue": "223f35f7-4225-449b-92e1-11cb70360812",
+            "url": "https://localdevui.sodra.com:3000/sv/se/om-sodra/pressrum/pressmeddelanden/"
+          },
+          "backgroundColor": "LightGrey",
+          "hideMetaAreasFilter": true,
+          "includeNews": true,
+          "includePressReleases": true,
+          "hideMetaForestryAreasFilter": true,
+          "includeDebateArticles": false,
+          "hideMetaCityFilter": true,
+          "categoryFilter": []
+        }
+      }
+    }
+  ],
+  "footerColumnOne": "<p><strong>Popul&auml;ra sidor</strong></p>\n<ul>\n<li><a title=\"Virkespriser\" href=\"https://localdevui.sodra.com:3000/sv/se/skog-medlem/skogsbruk/salja-virke/virkespriser/\">Virkespriser</a></li>\n<li><a title=\"Kontaktkarta verksmahetsomr&aring;den\" href=\"https://localdevui.sodra.com:3000/sv/se/skog-medlem/kontakta-oss/kontaktkarta-verksamhetsomraden/\">Kontaktkarta verksamhetsomr&aring;den</a></li>\n<li><a title=\"Byggtips - Helt enkelt\" href=\"https://localdevui.sodra.com:3000/sv/se/tra/bygghandel/helt-enkelt-tips/\">Byggtips - Helt enkelt</a></li>\n<li><a title=\"Korslimmat tr&auml;\" href=\"https://localdevui.sodra.com:3000/sv/se/byggsystem/vara-produkter/korslimmat-tra/\">Korslimmat tr&auml;</a></li>\n<li><a title=\"OnceMore&reg;\" href=\"https://localdevui.sodra.com:3000/en/global/pulp/oncemore/\">OnceMore<sup>&reg;</sup> by S&ouml;dra</a></li>\n<li><a title=\"V&aring;ra verksamheter\" href=\"https://localdevui.sodra.com:3000/sv/se/om-sodra/vara-verksamheter/\">V&aring;ra verksamheter</a></li>\n</ul>",
+  "footerColumnTwo": "<p><strong>Om S&ouml;dra</strong></p>\n<ul>\n<li><a title=\"Kontakta S&ouml;dra\" href=\"https://localdevui.sodra.com:3000/sv/se/om-sodra/kontakta-oss/\">Kontakta oss</a></li>\n<li><a title=\"Om S&ouml;dra\" href=\"https://localdevui.sodra.com:3000/sv/se/om-sodra/\">Om oss</a></li>\n<li><a title=\"Finansiell information\" href=\"https://localdevui.sodra.com:3000/sv/se/om-sodra/finansiell-information/\">Finansiell information</a></li>\n<li><a title=\"Organisation och styrning\" href=\"https://localdevui.sodra.com:3000/sv/se/om-sodra/organisation-och-styrning/\">Organisation och styrning</a></li>\n<li><a title=\"Lediga tj&auml;nster\" href=\"https://karriar.sodra.com/jobs\" target=\"_blank\" rel=\"noopener\">Lediga tj&auml;nster</a></li>\n<li><a title=\"Nyheter\" href=\"https://localdevui.sodra.com:3000/sv/se/om-sodra/nyheter/\">Nyheter</a></li>\n</ul>",
+  "footerColumnThree": "<p><strong>Huvudkontor och v&auml;xel</strong></p>\n<p><span class=\"mdi mdi-home mceNonEditable\">&nbsp;</span>Skogsudden, 351 89 V&auml;xj&ouml;<br /><span class=\"mdi mdi-phone mceNonEditable\">&nbsp;</span>0470-89 000<br /><span class=\"mdi mdi-email mceNonEditable\" style=\"font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;\">&nbsp;</span><a title=\"info@sodra.com\" href=\"mailto:info@sodra.com\">info@sodra.com</a></p>",
+  "hasContainer": false,
+  "footerCopy": "<p class=\"align-center\"><img src=\"/static/img/sodra-logo.svg\" alt=\"S&ouml;dra logo\" width=\"200\" /></p>\n<p class=\"align-center\">S&ouml;dra &auml;r Sveriges st&ouml;rsta skogs&auml;garf&ouml;rening och en internationell skogsindustrikoncern d&auml;r verksamheten baseras p&aring; f&ouml;r&auml;dling av medlemmarnas skogsr&aring;vara.</p>\n<p class=\"align-center\">&copy; S&ouml;dra,&nbsp;Skogsudden, 351 89 V&auml;xj&ouml;, Telefon 0470-890 00</p>\n<p class=\"align-center\"><a title=\"S&ouml;dra e-post\" href=\"mailto:info@sodra.com\">info@sodra.com</a><br /><br /><a title=\"Cookies\" href=\"https://localdevui.sodra.com:3000/sv/se/om-sodra/cookies/\"><em>Cookies</em></a> <em><a title=\"Sidkarta\" href=\"https://localdevui.sodra.com:3000/sv/se/sidkarta/\">Sidkarta</a></em></p>",
+  "metaTitle": "Södra är Sveriges största skogsägarförening.",
+  "searchPage": {
+    "id": 47253,
+    "workId": 0,
+    "guidValue": "6d1545b2-d9a4-4a83-ac89-845e462a9cee",
+    "url": "https://localdevui.sodra.com:3000/sv/se/sok/"
+  },
+  "marketLocationCode": "se",
+  "notice": {
+    "content": "<p>Under 9 november uppgraderar vi tekniken p&aring; webbplatsen. Detta kan medf&ouml;ra mindre st&ouml;rningar.</p>",
+    "type": "attention",
+    "isActive": false,
+    "showMessageStart": "2022-11-07T12:00:00Z",
+    "showMessageEnd": "2024-11-09T17:00:00Z",
+    "onlyShowOnce": true,
+    "requireReconfirmation": false,
+    "hasContainer": true,
+    "publishedDate": "2022-11-09T07:43:52.34Z"
+  },
+  "metaDescription": "Södra är Sveriges största skogsägarförening och en internationell skogsindustrikoncern där verksamheten baseras på förädling av medlemmarnas skogsråvara.",
+  "metaKeywords": "skogsägare, skog, trä, byggsystem, trämassa, bioprodukter, energi, hållbarhet, Södra, skogsföretag, trävaror, pappersmassa, textilmassa",
+  "metaAuthor": "Södra Skogsägarna",
+  "openGraphImageNewFotoware": {
+    "id": 66205,
+    "workId": 0,
+    "guidValue": "dfc1be64-d4b5-4d5a-b619-fda0c8521baa",
+    "url": "/globalassets/fotoware2/2020/12/2016-10-24-869.jpg"
+  },
+  "marketSelectorName": "Sweden | Sverige",
+  "menuContactLink": {
+    "id": 43764,
+    "workId": 0,
+    "guidValue": "3e1ccacc-7c8a-4aa6-aa62-561f7ad25205",
+    "url": "https://localdevui.sodra.com:3000/sv/se/om-sodra/kontakta-oss/"
+  },
+  "hideLoginButton": false,
+  "teaser": {},
+  "metaStartPageAlternateLinks": "<link rel=\"alternate\" href=\"https://localdev.sodra.com/sv/se/\" hreflang=\"sv\" />\r\n<link rel=\"alternate\" href=\"https://localdev.sodra.com/en/global/\" hreflang=\"en\" />\r\n<link rel=\"alternate\" href=\"https://localdev.sodra.com/en/gb/\" hreflang=\"en-GB\" />\r\n<link rel=\"alternate\" href=\"https://localdev.sodra.com/da/dk/\" hreflang=\"da\" />\r\n<link rel=\"alternate\" href=\"https://localdev.sodra.com/et/sodra-estonia/\" hreflang=\"et-ET\" />\r\n<link rel=\"alternate\" href=\"https://localdev.sodra.com/en/sodra-estonia/\" hreflang=\"en-ET\" />\r\n<link rel=\"alternate\" href=\"https://localdev.sodra.com/lv/Sodra_Latvija/\" hreflang=\"lv\" />\r\n",
+  "alternateLinks": [],
+  "startPageMarketLocationCodes": ["se"],
+  "startPageMarketLocationCode": "se",
+  "showInMenu": true
+}

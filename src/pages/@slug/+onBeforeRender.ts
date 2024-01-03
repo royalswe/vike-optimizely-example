@@ -54,17 +54,19 @@ async function onBeforeRender(pageContext: PageContext) {
     rootMenu?.Children.filter((c: any) => c.ShowInMenu)
   );
 
-  const documentProps = null;
-
-  // const documentProps = await contentService.getContent(
-  //   currentPage.Id,
-  //   currentPage.Language,
-  //   {
-  //     pageUrl: currentPage.Url,
-  //     expand: '*',
-  //   },
-  //   pageContext.requestCookie || ''
-  // );
+  const [getNotices, getChildNotices, documentProps] = await Promise.all([
+    httpService.get(`/_api/notices/${currentPage.Id}`),
+    httpService.get(`/_api/notices/children/${currentPage.Id}`),
+    contentService.getContent(
+      currentPage.Id,
+      currentPage.Language,
+      {
+        pageUrl: currentPage.Url,
+        expand: '*',
+      },
+      pageContext.requestCookie || ''
+    ),
+  ]);
 
   if (documentProps) {
     documentProps.hasContainer =
@@ -80,6 +82,8 @@ async function onBeforeRender(pageContext: PageContext) {
       redirectTo: redirectTo,
       pageProps: {
         navMenu,
+        notices: getNotices,
+        childNotices: getChildNotices,
         route: { marketPageId, marketPagePath },
       },
       siteSettings,
