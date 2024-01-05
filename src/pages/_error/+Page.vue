@@ -1,16 +1,19 @@
 <template>
-  <div v-if="is404">
+  <div v-if="abortStatusCode === 404">
     <h1>404 Page Not Found</h1>
     <p>This page could not be found.</p>
-    <p>{{ errorInfo }}</p>
   </div>
-  <div v-else>
-    <h1>500 Internal Error</h1>
-    <p>Something went wrong.</p>
-    <p>{{ errorInfo }}</p>
+  <div v-else role="main">
+    <h1>{{ abortStatusCode }}</h1>
+    <p>
+      {{ abortReason ? abortReason : 'Error! Something went wrong.' }}
+    </p>
   </div>
 </template>
 
-<script lang="ts" setup>
-defineProps(['is404', 'errorInfo'])
+
+<script setup lang="ts">
+import { usePageContext } from '#src/renderer/usePageContext';
+
+const { abortReason, abortStatusCode } = usePageContext();
 </script>

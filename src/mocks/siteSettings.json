@@ -1,0 +1,376 @@
+{
+  "loginModalContentArea": [
+    {
+      "displayOption": "",
+      "contentLink": {
+        "id": 5470,
+        "workId": 0,
+        "guidValue": "1e7f545b-7827-42ec-b8cb-649f4db4b50b",
+        "expanded": {
+          "contentLink": {
+            "id": 5470,
+            "workId": 0,
+            "guidValue": "1e7f545b-7827-42ec-b8cb-649f4db4b50b"
+          },
+          "name": "Medlemsinloggning",
+          "existingLanguages": [
+            {
+              "displayName": "Svenska",
+              "name": "sv"
+            }
+          ],
+          "contentType": ["Block", "LoginModalItemBlock"],
+          "Category": [],
+          "LoginType": 2,
+          "LinkItem": [
+            {
+              "href": "https://minskogsgard.local.com/",
+              "title": "Min skogsgård webb",
+              "target": "_blank",
+              "text": "Min skogsgård webb"
+            }
+          ],
+          "SecondaryLinkItem": [],
+          "GetLinkFromConfig": null,
+          "AnchorId": "",
+          "DisplayOption": ""
+        }
+      }
+    },
+    {
+      "displayOption": "",
+      "contentLink": {
+        "id": 94991,
+        "workId": 0,
+        "guidValue": "75546a8b-a361-4c50-b2b1-405e1ed05ce0",
+        "expanded": {
+          "contentLink": {
+            "id": 94991,
+            "workId": 0,
+            "guidValue": "75546a8b-a361-4c50-b2b1-405e1ed05ce0"
+          },
+          "name": "MyPulp+ login (new)",
+          "existingLanguages": [
+            {
+              "displayName": "Svenska",
+              "name": "sv"
+            }
+          ],
+          "contentType": ["Block", "LoginModalItemBlock"],
+          "Category": [],
+          "LoginType": 3,
+          "LinkItem": [
+            {
+              "href": "https://mypulpplus.local.com/login",
+              "title": "MyPulp+ login (new)",
+              "target": "_blank",
+              "text": "MyPulp+ login (new)"
+            }
+          ],
+          "SecondaryLinkItem": [],
+          "GetLinkFromConfig": null,
+          "AnchorId": "",
+          "DisplayOption": ""
+        }
+      }
+    },
+    {
+      "displayOption": "",
+      "contentLink": {
+        "id": 10301,
+        "workId": 0,
+        "guidValue": "bfb9b463-70f6-4c20-8bae-af0d6d4d1cf3",
+        "expanded": {
+          "contentLink": {
+            "id": 10301,
+            "workId": 0,
+            "guidValue": "bfb9b463-70f6-4c20-8bae-af0d6d4d1cf3"
+          },
+          "name": "Pulp+ login (old)",
+          "existingLanguages": [
+            {
+              "displayName": "Svenska",
+              "name": "sv"
+            }
+          ],
+          "contentType": ["Block", "LoginModalItemBlock"],
+          "Category": [],
+          "LoginType": 3,
+          "LinkItem": [
+            {
+              "href": "https://localhost.com:3000/en/global/pulp/",
+              "title": "Pulp+ login (old)",
+              "target": "_blank",
+              "text": "Pulp+ login (old)",
+              "contentLink": {
+                "id": 41590,
+                "workId": 0,
+                "guidValue": "d65dbcd1-dc01-4aa6-a352-696c766fa8b3",
+                "url": "https://localhost.com:3000/en/global/pulp/"
+              }
+            }
+          ],
+          "SecondaryLinkItem": [],
+          "GetLinkFromConfig": null,
+          "AnchorId": "",
+          "DisplayOption": ""
+        }
+      }
+    },
+    {
+      "displayOption": "",
+      "contentLink": {
+        "id": 8787,
+        "workId": 0,
+        "guidValue": "06368ff4-2a72-4e31-9836-5ac0db2125dd",
+        "expanded": {
+          "contentLink": {
+            "id": 8787,
+            "workId": 0,
+            "guidValue": "06368ff4-2a72-4e31-9836-5ac0db2125dd"
+          },
+          "name": "Entreprenörsportal skog",
+          "existingLanguages": [
+            {
+              "displayName": "Svenska",
+              "name": "sv"
+            }
+          ],
+          "contentType": ["Block", "LoginModalItemBlock"],
+          "Category": [],
+          "LoginType": null,
+          "LinkItem": [
+            {
+              "href": "https://entreprenor.local.com/",
+              "title": "Portal för skogsentreprenörer",
+              "target": "_blank",
+              "text": "Portal för skogsentreprenörer"
+            }
+          ],
+          "SecondaryLinkItem": [],
+          "GetLinkFromConfig": null,
+          "AnchorId": "",
+          "DisplayOption": ""
+        }
+      }
+    },
+    {
+      "displayOption": "",
+      "contentLink": {
+        "id": 65561,
+        "workId": 0,
+        "guidValue": "cc1a9769-02e8-4bbf-bdd2-76eaa4cbe6af",
+        "expanded": {
+          "contentLink": {
+            "id": 65561,
+            "workId": 0,
+            "guidValue": "cc1a9769-02e8-4bbf-bdd2-76eaa4cbe6af"
+          },
+          "name": "För förtroendevalda",
+          "existingLanguages": [
+            {
+              "displayName": "Svenska",
+              "name": "sv"
+            }
+          ],
+          "contentType": ["Block", "LoginModalItemBlock"],
+          "Category": [],
+          "LoginType": 2,
+          "LinkItem": [
+            {
+              "href": "https://localhost.com:3000/sv/se/inloggad-fortroendevald/startsida-fortroendevalda/",
+              "title": "För förtroendevalda",
+              "text": "För förtroendevalda",
+              "contentLink": {
+                "id": 14241,
+                "workId": 0,
+                "guidValue": "ad5cee43-88af-4aba-88cd-229c13ef9f0c",
+                "url": "https://localhost.com:3000/sv/se/inloggad-fortroendevald/startsida-fortroendevalda/"
+              }
+            }
+          ],
+          "SecondaryLinkItem": [],
+          "GetLinkFromConfig": null,
+          "AnchorId": "",
+          "DisplayOption": ""
+        }
+      }
+    },
+    {
+      "displayOption": "",
+      "contentLink": {
+        "id": 66080,
+        "workId": 0,
+        "guidValue": "dc0f58f8-c962-4c71-a514-aeaed1adf4c0",
+        "expanded": {
+          "contentLink": {
+            "id": 66080,
+            "workId": 0,
+            "guidValue": "dc0f58f8-c962-4c71-a514-aeaed1adf4c0"
+          },
+          "name": "Wood Market Place",
+          "existingLanguages": [
+            {
+              "displayName": "Svenska",
+              "name": "sv"
+            }
+          ],
+          "contentType": ["Block", "LoginModalItemBlock"],
+          "Category": [],
+          "LoginType": 4,
+          "LinkItem": [
+            {
+              "href": "https://wmp.local.com/",
+              "title": "Wood marketplace",
+              "target": "_blank",
+              "text": "Wood marketplace"
+            }
+          ],
+          "SecondaryLinkItem": [],
+          "GetLinkFromConfig": null,
+          "AnchorId": "",
+          "DisplayOption": ""
+        }
+      }
+    },
+    {
+      "displayOption": "",
+      "contentLink": {
+        "id": 67368,
+        "workId": 0,
+        "guidValue": "72529488-6132-4055-ba19-0a1dd176c942",
+        "expanded": {
+          "contentLink": {
+            "id": 67368,
+            "workId": 0,
+            "guidValue": "72529488-6132-4055-ba19-0a1dd176c942"
+          },
+          "name": "El",
+          "existingLanguages": [
+            {
+              "displayName": "Svenska",
+              "name": "sv"
+            }
+          ],
+          "contentType": ["Block", "LoginModalItemBlock"],
+          "Category": [],
+          "LoginType": 2,
+          "LinkItem": [
+            {
+              "href": "https://minasidor.local-el.com/Login/",
+              "title": "Mina sidor El",
+              "target": "_blank",
+              "text": "Mina sidor El"
+            }
+          ],
+          "SecondaryLinkItem": [],
+          "GetLinkFromConfig": null,
+          "AnchorId": "",
+          "DisplayOption": ""
+        }
+      }
+    }
+  ],
+  "footerCopy": "<p class=\"align-center\"><img src=\"/static/img/local-logo.svg\" alt=\"S&ouml;dra logo\" width=\"200\" /></p>\n<p class=\"align-center\">S&ouml;dra &auml;r Sveriges st&ouml;rsta skogs&auml;garf&ouml;rening och en internationell skogsindustrikoncern d&auml;r verksamheten baseras p&aring; f&ouml;r&auml;dling av medlemmarnas skogsr&aring;vara.</p>\n<p class=\"align-center\">&copy; S&ouml;dra,&nbsp;Skogsudden, 351 89 V&auml;xj&ouml;, Telefon 0470-890 00</p>\n<p class=\"align-center\"><a title=\"S&ouml;dra e-post\" href=\"mailto:info@local.com\">info@local.com</a><br /><br /><a title=\"Cookies\" href=\"https://localhost.com:3000/sv/se/om-local/cookies/\"><em>Cookies</em></a> <em><a title=\"Sidkarta\" href=\"https://localhost.com:3000/sv/se/sidkarta/\">Sidkarta</a></em></p>",
+  "footerColumnOne": "<p><strong>Popul&auml;ra sidor</strong></p>\n<ul>\n<li><a title=\"Virkespriser\" href=\"https://localhost.com:3000/sv/se/skog-medlem/skogsbruk/salja-virke/virkespriser/\">Virkespriser</a></li>\n<li><a title=\"Kontaktkarta verksmahetsomr&aring;den\" href=\"https://localhost.com:3000/sv/se/skog-medlem/kontakta-oss/kontaktkarta-verksamhetsomraden/\">Kontaktkarta verksamhetsomr&aring;den</a></li>\n<li><a title=\"Byggtips - Helt enkelt\" href=\"https://localhost.com:3000/sv/se/tra/bygghandel/helt-enkelt-tips/\">Byggtips - Helt enkelt</a></li>\n<li><a title=\"Korslimmat tr&auml;\" href=\"https://localhost.com:3000/sv/se/byggsystem/vara-produkter/korslimmat-tra/\">Korslimmat tr&auml;</a></li>\n<li><a title=\"OnceMore&reg;\" href=\"https://localhost.com:3000/en/global/pulp/oncemore/\">OnceMore<sup>&reg;</sup> by S&ouml;dra</a></li>\n<li><a title=\"V&aring;ra verksamheter\" href=\"https://localhost.com:3000/sv/se/om-local/vara-verksamheter/\">V&aring;ra verksamheter</a></li>\n</ul>",
+  "footerColumnTwo": "<p><strong>Om S&ouml;dra</strong></p>\n<ul>\n<li><a title=\"Kontakta S&ouml;dra\" href=\"https://localhost.com:3000/sv/se/om-local/kontakta-oss/\">Kontakta oss</a></li>\n<li><a title=\"Om S&ouml;dra\" href=\"https://localhost.com:3000/sv/se/om-local/\">Om oss</a></li>\n<li><a title=\"Finansiell information\" href=\"https://localhost.com:3000/sv/se/om-local/finansiell-information/\">Finansiell information</a></li>\n<li><a title=\"Organisation och styrning\" href=\"https://localhost.com:3000/sv/se/om-local/organisation-och-styrning/\">Organisation och styrning</a></li>\n<li><a title=\"Lediga tj&auml;nster\" href=\"https://karriar.local.com/jobs\" target=\"_blank\" rel=\"noopener\">Lediga tj&auml;nster</a></li>\n<li><a title=\"Nyheter\" href=\"https://localhost.com:3000/sv/se/om-local/nyheter/\">Nyheter</a></li>\n</ul>",
+  "footerColumnThree": "<p><strong>Huvudkontor och v&auml;xel</strong></p>\n<p><span class=\"mdi mdi-home mceNonEditable\">&nbsp;</span>Skogsudden, 351 89 V&auml;xj&ouml;<br /><span class=\"mdi mdi-phone mceNonEditable\">&nbsp;</span>0470-89 000<br /><span class=\"mdi mdi-email mceNonEditable\" style=\"font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;\">&nbsp;</span><a title=\"info@local.com\" href=\"mailto:info@local.com\">info@local.com</a></p>",
+  "facebookLink": "https://www.facebook.com/localgroup",
+  "instagramLink": "https://www.instagram.com/localgroup/",
+  "twitterLink": "https://twitter.com/local",
+  "youtubeLink": "https://www.youtube.com/c/localgroup",
+  "linkedinLink": "https://www.linkedin.com/company/local",
+  "siteSearchPlaceholder": "Sök...",
+  "downloadMultipleFiles": true,
+  "searchPage": {
+    "id": 47253,
+    "workId": 0,
+    "guidValue": "6d1545b2-d9a4-4a83-ac89-845e462a9cee",
+    "url": "https://localhost.com:3000/sv/se/sok/"
+  },
+  "gdprCourseInterestApplicationText": "Jag förstår policy för personuppgiftshantering",
+  "error404Page": {
+    "id": 568,
+    "workId": 0,
+    "guidValue": "09c7c7cd-4b87-40b2-ba3b-9abc250130a7"
+  },
+  "psolEservicesAreOffline": false,
+  "psolEservicesOfflineMessage": "Den här E-tjänsten är tillfälligt stoppad för uppdatering.",
+  "skogEservicesAreOffline": false,
+  "skogEservicesOfflineMessage": "Mellan den 27 november och 2 december kommer samtliga av våra e-tjänster inte att finnas tillgängliga då vi bland annat uppdaterar med ny design samt plattform för våra e-tjänster.",
+  "oldBrowserInformation": "<p>Hej, du f&aring;r detta meddelandet f&ouml;r att din nuvarande webbl&auml;sare &auml;r f&ouml;r&aring;ldrad! V&auml;nligen byt eller uppgradera din webbl&auml;sare</p>",
+  "startPageSelectionList": [
+    {
+      "href": "/sv/se/skog-medlem/",
+      "text": "Skog & medlem",
+      "contentLink": {
+        "id": 45206,
+        "workId": 0,
+        "guidValue": "43dd2c81-b2a4-45cd-a560-e92939ffeb07",
+        "url": "https://localhost.com:3000/sv/se/skog-medlem/"
+      }
+    },
+    {
+      "href": "/sv/se/byggsystem/",
+      "text": "Byggsystem",
+      "contentLink": {
+        "id": 49043,
+        "workId": 0,
+        "guidValue": "f697d220-3662-4b08-a2e7-fe73032e9e22",
+        "url": "https://localhost.com:3000/sv/se/byggsystem/"
+      }
+    },
+    {
+      "href": "/en/global/",
+      "text": "Global start page",
+      "contentLink": {
+        "id": 47612,
+        "workId": 0,
+        "guidValue": "91796810-1f86-4c3d-a98c-8a839ab2b367",
+        "url": "https://localhost.com:3000/en/global/"
+      }
+    },
+    {
+      "href": "/en/gb/",
+      "text": "Great Britain start page",
+      "contentLink": {
+        "id": 42960,
+        "workId": 0,
+        "guidValue": "f3f436a0-134b-440d-9aa4-45f23777c089",
+        "url": "https://localhost.com:3000/en/gb/"
+      }
+    }
+  ],
+  "popovers": [
+    {
+      "displayOption": "",
+      "contentLink": {
+        "id": 38605,
+        "workId": 0,
+        "guidValue": "aaf1ad88-f88c-44bd-9f25-79c5d7efe4fd",
+        "expanded": {
+          "contentLink": {
+            "id": 38605,
+            "workId": 0,
+            "guidValue": "aaf1ad88-f88c-44bd-9f25-79c5d7efe4fd"
+          },
+          "name": "Inloggningsinformation",
+          "existingLanguages": [
+            {
+              "displayName": "Svenska",
+              "name": "sv"
+            }
+          ],
+          "contentType": ["Block", "PopoverBlock"],
+          "Category": [],
+          "AnchorId": "",
+          "PopoverBackgroundColor": "Yellow",
+          "Selector": "[data-element-id=login-sidebar]",
+          "Text": "Här finns dina tjänster! Hej, när du är inloggad kommer du åt dina tjänster och din profil från alla sidor.",
+          "Active": false,
+          "DisplayOption": ""
+        }
+      }
+    }
+  ]
+}

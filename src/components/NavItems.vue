@@ -1,30 +1,27 @@
 <template>
-  <li class="c-sidebar-nav__item" v-bind="subMenuAttr(!!item.children, isActive)">
-    <a :href="item.href" class="c-sidebar-nav__link"
-      :aria-current="item.href === pageContext.urlPathname ? 'page' : undefined">
+  <li v-bind="subMenuAttr(!!item.children, isActive)">
+    <component :is="item.url ? 'a' : 'span'" :href="item.url" class="nav-link text-white"
+      :aria-current="item.url === pageContext.urlPathname ? 'page' : undefined">
       <content />
-    </a>
+    </component>
     <sub-menu />
   </li>
 </template>
-  
+
 <script setup lang="ts">
 import { defineComponent, computed, h } from 'vue';
-import NavItem from '@/components/NavItems.vue';
-import { usePageContext } from '@/renderer/usePageContext'
+import NavItem from '#src/components/NavItems.vue';
+import { usePageContext } from '#src/renderer/usePageContext';
 
-const props = defineProps<{ item: any }>();
+const props = defineProps<{ item: any; }>();
+const pageContext = usePageContext();
 
-const pageContext = usePageContext()
-const { href } = props.item
 const isActive = computed(() => {
+  const { urlPathname } = pageContext;
+  return props.item.url === '/' ? urlPathname === props.item.url : urlPathname.startsWith(props.item.url as string);
+});
 
-  const { urlPathname } = pageContext
-  return href === '/' ? urlPathname === href : urlPathname.startsWith(href)
-})
-
-// a11y attributes for submenu
-const subMenuAttr = (submenu: boolean, isActive: boolean) => {
+const subMenuAttr: any = (submenu: boolean, isActive: boolean) => {
   if (submenu) {
     return {
       'aria-haspopup': 'true',
@@ -33,34 +30,29 @@ const subMenuAttr = (submenu: boolean, isActive: boolean) => {
   }
 };
 
-// render the text and icons
 const content = defineComponent({
   setup() {
     return () => [
       props.item.icon ?
-        h('i', { class: 'c-sidebar-nav__symbol-left material-symbols-outlined', innerHTML: props.item.icon }) : undefined,
-      props.item.text, // plain text
-      props.item.children ? h('span', { class: 'c-sidebar-nav__symbol' }, [
-        h('i', { class: 'material-symbols-outlined', innerHTML: 'keyboard_arrow_right' }),
+        h('i', { class: props.item.icon }) : undefined,
+      props.item.text,
+      props.item.children ? h('span', { class: 'ms-4' }, [
+        h('i', { class: 'bi bi-chevron-down' }), // Bootstrap chevron-down icon
       ]) : undefined
-    ]
+    ];
   }
 });
 
-// loop all the children and render them
 const subMenu = defineComponent({
   setup() {
     return () => props.item.children && [
-      h('button', { class: 'c-sidebar-nav__open-submenu', 'aria-expanded': 'false' }, [
-        h('i', { class: 'material-icons' }),
-      ]),
-      h('ul', { class: 'c-sidebar-nav__submenu' }, [
-        props.item.children.map(child => h(NavItem, {
+      h('ul', { class: 'list-unstyled ms-4' }, [
+        props.item.children.map((child: { url: string; route: string; }) => h(NavItem, {
           key: child.url ?? child.route,
           item: child
         }))
       ])
-    ]
+    ];
   }
 });
 

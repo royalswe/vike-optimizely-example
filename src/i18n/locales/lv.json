@@ -1,5 +1,7 @@
 {
   "common": {
+    "greetings": "Laipni",
+    "menu": "Menīs",
     "readmore": "Lasīt vairāk",
     "st": "gab",
     "loading": "Ielādējas...",

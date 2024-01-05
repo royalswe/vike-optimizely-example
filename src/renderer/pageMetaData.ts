@@ -1,15 +1,23 @@
-import { dangerouslySkipEscape } from 'vite-plugin-ssr/server';
 import { PageContext } from './types';
 
-/**
- * Set page meta data from documentProps fetched from api
- * @param page
- */
-export function setPageMetaData(pageContext: PageContext) {
+const BASE_URL = import.meta.env.VITE_BASE_URL;
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
+
+const CONTENT_TYPES_WITH_RSS = [
+  'EventListPage',
+  'NewsListPage',
+  'PressReleasesPage',
+];
+
+export function setPageMetaData(pageContext: PageContext): string {
   if (!pageContext.documentProps) {
     return '';
   }
-  const page: any = pageContext.documentProps;
+
+  const page: any = pageContext.currentPage?.PressRelease
+    ? { name: pageContext.currentPage.PressRelease.title }
+    : pageContext.documentProps;
+
   const title =
     page?.metaTitle ||
     page?.title ||
@@ -18,58 +26,70 @@ export function setPageMetaData(pageContext: PageContext) {
     page?.name ||
     '';
 
-  let metaData = '';
+  let metaData = generateRSSLinks(page, pageContext);
+  metaData += generateMetaTags(page, title);
+  metaData += generateCanonicalLink(page);
+  metaData += generateAlternateLinks(page);
 
-  // Set rss link only for thoose pages who has rss content
-  if (
-    ['EventListPage', 'NewsListPage', 'PressReleasesPage'].includes(
-      page?.pageType || page?.contentType?.last() // TODO do page.pageType exist?
-    )
-  ) {
-    metaData += `<link href="${pageContext.fullUrl}rss" rel="alternate" title="${page?.rSSTitle}" type="application/rss+xml">`;
+  return `<title>${title}</title>\n${metaData}`;
+}
+
+function generateRSSLinks(page: any, pageContext: PageContext): string {
+  if (CONTENT_TYPES_WITH_RSS.includes(page?.contentType?.last())) {
+    return `<link href="${pageContext.fullUrl}rss" rel="alternate" title="${page?.rSSTitle}" type="application/rss+xml">`;
   }
+  return '';
+}
 
-  // TODO: do not think title should every where
+function generateMetaTags(page: any, title: string): string {
+  const imageUrl = `${BASE_URL}${page?.openGraphImageNewFotoware?.url}`;
+  const pageUrl = `${BASE_URL}${page?.url}`;
+
   const metaArray = [
-    ['robots', page?.includeInSearch ? 'noindex' : false],
+    ['robots', page?.includeInSearch ? 'noindex' : undefined],
     ['title', title],
     ['description', page?.metaDescription],
     ['keywords', page?.metaKeywords],
     ['author', page?.metaAuthor],
-    ['og:url', page?.url],
+    ['og:url', pageUrl],
     ['og:type', 'website'],
     ['og:title', title],
-    ['og:description', title],
-    ['og:image', page?.imageUrl],
-    ['twitter:url', page?.imageUrl],
+    ['og:description', page?.metaDescription],
+    ['og:image', imageUrl],
+    ['twitter:url', pageUrl],
     ['twitter:card', 'summary'],
     ['twitter:title', title],
-    ['twitter:description', title],
-    ['twitter:image', page?.imageUrl],
+    ['twitter:description', page?.metaDescription],
+    ['twitter:image', imageUrl],
   ];
 
-  for (const [key, value] of metaArray) {
-    if (value !== undefined && value !== '') {
-      metaData += `<meta name="${key}" content="${value}" />`;
-    }
-  }
+  return metaArray
+    .map(([key, value]) => generateMetaTag(key, value))
+    .join('\n');
+}
 
-  // TODO: verify canonical/alternative links
-  if (page?.alternateLinks?.length) {
-    // sourceUrl is the canonical
-    if (page.alternateLinks[0]?.sourceUrl) {
-      metaData += `<link rel="canonical" href="${page.alternateLinks[0].sourceUrl}" />`;
-    }
-    page.alternateLinks.forEach((alternateLink: any) => {
-      // Make all links alternative except the current page
-      if (page.contentLink.id != page.alternateLink.pageId) {
-        metaData += `<link rel="alternate" href="${alternateLink.url}" hreflang="${alternateLink.language}" />`;
-      }
-    });
-  }
+function generateMetaTag(name: string, content: string): string {
+  return content ? `<meta name="${name}" content="${content}" />` : '';
+}
 
-  return dangerouslySkipEscape(`
-    <title>${title}</title>
-    ${metaData}
-    `);
+function replaceAllBaseUrl(input: string | undefined): string {
+  if (!input) {
+    return '';
+  }
+  return input.replaceAll(API_BASE_URL, BASE_URL);
+}
+
+function generateCanonicalLink(page: any): string {
+  const canonical = page.metaCanonicalLink
+    ? replaceAllBaseUrl(page.metaCanonicalLink)
+    : undefined;
+  return canonical ? `<link rel="canonical" href="${canonical}" />` : '';
+}
+
+function generateAlternateLinks(page: any): string {
+  const alternateLinks = page.metaStartPageAlternateLinks
+    ? replaceAllBaseUrl(page.metaStartPageAlternateLinks)
+    : replaceAllBaseUrl(page.metaAlternateLinks);
+
+  return alternateLinks || '';
 }

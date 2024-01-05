@@ -1,57 +1,64 @@
-export type { PageContextServer }
-export type { PageContextClient }
-export type { PageContext }
-export type { PageProps }
-export type { Component }
-export type { PageContextUrl }
+export type { PageContextServer };
+export type { PageContextClient };
+export type { PageContext };
+export type { PageProps };
+export type { Component };
+export type { PageContextUrl };
 
-import type { SitePageData } from '@/models/pages/sitePageData'
 import type {
-  PageContextBuiltIn,
+  PageContextBuiltInServer,
   //*
   // When using Client Routing https://vite-plugin-ssr.com/clientRouting
-  PageContextBuiltInClientWithClientRouting as PageContextBuiltInClient
+  PageContextBuiltInClientWithClientRouting as PageContextBuiltInClient,
   /*/
   // When using Server Routing
   PageContextBuiltInClientWithServerRouting as PageContextBuiltInClient
   //*/
-} from 'vite-plugin-ssr/types'
-import type { ComponentPublicInstance } from 'vue'
+} from 'vike/types';
+import type { ComponentPublicInstance, DefineComponent } from 'vue';
 
-type Component = ComponentPublicInstance // https://stackoverflow.com/questions/63985658/how-to-type-vue-instance-out-of-definecomponent-in-vue-3/63986086#63986086
+type Component = ComponentPublicInstance; // https://stackoverflow.com/questions/63985658/how-to-type-vue-instance-out-of-definecomponent-in-vue-3/63986086#63986086
 
-type Page = Component
-type PageProps = Record<string, unknown>
+type Page = Component;
+type PageProps = Record<string, unknown>;
 
 type PageContextCustom = {
-  Page: Page
-  pageProps?: PageProps
+  Page: Page;
+  pageProps?: PageProps;
   config: {
     /** Title defined statically by /pages/some-page/+title.js (or by `export default { title }` in /pages/some-page/+config.js) */
-    title?: string
-  }
+    title?: string;
+    Layout?: DefineComponent;
+  };
   /** Title defined dynamically by onBeforeRender() */
-  title?: string
-  locale: string
-  market: string
-  businessArea: string
-  fullUrl: string
-  urlWithoutLocale: string
-  initialStoreState?: any
-  currentPage?: any
-  documentProps: SitePageData
-}
+  title?: string;
+  locale: 'sv' | 'en' | 'da' | 'et' | 'lv';
+  market: string;
+  businessArea: string;
+  fullUrl: string;
+  urlWithoutMarketAndLocale: string;
+  initialStoreState?: any;
+  user: any;
+  currentPage?: any;
+  siteSettings: any;
+  documentProps: any;
+  marketPageId: any;
+  isPreview?: boolean;
+  isStyleApp?: boolean;
+  requestCookie?: string;
+  isHydration: boolean;
+};
 
 type PageContextUrl = {
-  locale?: string
-  market?: string
-  urlWithoutLocale?: string
-  fullUrl: string
-  routeParams?: { language: string; businessArea: string }
-  initialStoreState?: any
-}
+  locale?: string;
+  market?: string;
+  urlWithoutMarketAndLocale?: string;
+  fullUrl: string;
+  routeParams?: { language: string; businessArea: string };
+  initialStoreState?: any;
+};
 
-type PageContextServer = PageContextBuiltIn<Page> & PageContextCustom
-type PageContextClient = PageContextBuiltInClient<Page> & PageContextCustom
+type PageContextServer = PageContextBuiltInServer<Page> & PageContextCustom;
+type PageContextClient = PageContextBuiltInClient<Page> & PageContextCustom;
 
-type PageContext = PageContextClient | PageContextServer
+type PageContext = PageContextClient | PageContextServer;

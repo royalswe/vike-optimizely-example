@@ -1,5 +1,7 @@
 {
   "common": {
+    "greetings": "Tere",
+    "menu": "Menu",
     "readmore": "Loe rohkem",
     "st": "tk",
     "loading": "Laadimine...",

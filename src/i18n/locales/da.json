@@ -1,5 +1,7 @@
 {
   "common": {
+    "greetings": "Velkommen",
+    "menu": "Menu",
     "readmore": "Læs mere",
     "st": "stk",
     "loading": "Indlæser...",

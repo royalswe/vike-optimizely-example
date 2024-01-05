@@ -1,0 +1,496 @@
+{
+  "Id": 38619,
+  "PageTypeName": "MarketSelectionPage",
+  "Name": "Markets",
+  "UrlName": "location",
+  "Url": "/sv/",
+  "ExternalURL": "location",
+  "Children": [
+    {
+      "Id": 42900,
+      "PageTypeName": "FlexStartPage",
+      "Name": "Sverige",
+      "UrlName": "se",
+      "Url": "/sv/se/",
+      "ExternalURL": "se",
+      "Children": [
+        {
+          "Id": 45206,
+          "PageTypeName": "FlexStartPage",
+          "Name": "Skog & medlem",
+          "UrlName": "skog-medlem",
+          "Url": "/sv/se/skog-medlem/",
+          "ExternalURL": "skog",
+          "Children": [
+            {
+              "Id": 490463,
+              "PageTypeName": "InformationPage",
+              "Name": "Medlemmar",
+              "UrlName": "medlemmar",
+              "Url": "/sv/se/skog-medlem/medlemmar/",
+              "ExternalURL": "",
+              "SortOrder": 0,
+              "ShowInMenu": true,
+              "BusinessAreaStartPage": false,
+              "Language": "sv",
+              "DetailsPage": null,
+              "Children": [
+                {
+                  "Id": 490333,
+                  "PageTypeName": "InformationPage",
+                  "Name": "Barn",
+                  "UrlName": "barn",
+                  "Url": "/sv/se/skog-medlem/medlemmar/barn/",
+                  "ExternalURL": "",
+                  "Children": [],
+                  "SortOrder": 0,
+                  "ShowInMenu": true,
+                  "BusinessAreaStartPage": false,
+                  "Language": "sv",
+                  "DetailsPage": null
+                },
+                {
+                  "Id": 490333,
+                  "PageTypeName": "InformationPage",
+                  "Name": "Barn igen",
+                  "UrlName": "barn-igen",
+                  "Url": "/sv/se/skog-medlem/medlemmar/barn-igen/",
+                  "ExternalURL": "",
+                  "Children": [],
+                  "SortOrder": 0,
+                  "ShowInMenu": true,
+                  "BusinessAreaStartPage": false,
+                  "Language": "sv",
+                  "DetailsPage": null
+                }
+              ]
+            },
+            {
+              "Id": 490462,
+              "PageTypeName": "InformationPage",
+              "Name": "Kontakta oss",
+              "UrlName": "kontakta-oss",
+              "Url": "/sv/se/skog-medlem/kontakta-oss/",
+              "ExternalURL": "",
+              "Children": [],
+              "SortOrder": 0,
+              "ShowInMenu": true,
+              "BusinessAreaStartPage": false,
+              "Language": "sv",
+              "DetailsPage": null
+            },
+            {
+              "Id": 490461,
+              "PageTypeName": "InformationPage",
+              "Name": "Hitta medlemmar",
+              "UrlName": "hitta-medlemmar",
+              "Url": "/sv/se/skog-medlem/hitta-medlemmar/",
+              "ExternalURL": "",
+              "Children": [],
+              "SortOrder": 0,
+              "ShowInMenu": true,
+              "BusinessAreaStartPage": false,
+              "Language": "sv",
+              "DetailsPage": null
+            }
+          ],
+          "SortOrder": 0,
+          "ShowInMenu": true,
+          "BusinessAreaStartPage": true,
+          "Language": "sv",
+          "DetailsPage": null
+        },
+        {
+          "Id": 49043,
+          "PageTypeName": "FlexStartPage",
+          "Name": "Byggsystem",
+          "UrlName": "byggsystem",
+          "Url": "/sv/se/byggsystem/",
+          "ExternalURL": "byggsystem",
+          "Children": [
+            {
+              "Id": 49045,
+              "PageTypeName": "FlexPage",
+              "Name": "Tänk Trä",
+              "UrlName": "tank-tra",
+              "Url": "/sv/se/byggsystem/tank-tra/",
+              "ExternalURL": "",
+              "Children": [
+                {
+                  "Id": 49046,
+                  "PageTypeName": "InformationPage",
+                  "Name": "Planera i trä",
+                  "UrlName": "planera-i-tra",
+                  "Url": "/sv/se/byggsystem/tank-tra/planera-i-tra/",
+                  "ExternalURL": "",
+                  "Children": [],
+                  "SortOrder": 0,
+                  "ShowInMenu": true,
+                  "BusinessAreaStartPage": false,
+                  "Language": "sv",
+                  "DetailsPage": null
+                },
+                {
+                  "Id": 49047,
+                  "PageTypeName": "InformationPage",
+                  "Name": "Arkitektur i trä",
+                  "UrlName": "arkitektur-i-tra",
+                  "Url": "/sv/se/byggsystem/tank-tra/arkitektur-i-tra/",
+                  "ExternalURL": "",
+                  "Children": [],
+                  "SortOrder": 6,
+                  "ShowInMenu": true,
+                  "BusinessAreaStartPage": false,
+                  "Language": "sv",
+                  "DetailsPage": null
+                },
+                {
+                  "Id": 49048,
+                  "PageTypeName": "InformationPage",
+                  "Name": "Konstruera i trä",
+                  "UrlName": "konstruera-i-tra",
+                  "Url": "/sv/se/byggsystem/tank-tra/konstruera-i-tra/",
+                  "ExternalURL": "",
+                  "Children": [],
+                  "SortOrder": 12,
+                  "ShowInMenu": true,
+                  "BusinessAreaStartPage": false,
+                  "Language": "sv",
+                  "DetailsPage": null
+                },
+                {
+                  "Id": 49049,
+                  "PageTypeName": "InformationPage",
+                  "Name": "Bygg i trä",
+                  "UrlName": "bygg-i-tra",
+                  "Url": "/sv/se/byggsystem/tank-tra/bygg-i-tra/",
+                  "ExternalURL": "",
+                  "Children": [],
+                  "SortOrder": 25,
+                  "ShowInMenu": true,
+                  "BusinessAreaStartPage": false,
+                  "Language": "sv",
+                  "DetailsPage": null
+                },
+                {
+                  "Id": 49050,
+                  "PageTypeName": "InformationPage",
+                  "Name": "Bo i trä",
+                  "UrlName": "Bo-i-tra",
+                  "Url": "/sv/se/byggsystem/tank-tra/Bo-i-tra/",
+                  "ExternalURL": "",
+                  "Children": [],
+                  "SortOrder": 100,
+                  "ShowInMenu": true,
+                  "BusinessAreaStartPage": false,
+                  "Language": "sv",
+                  "DetailsPage": null
+                }
+              ],
+              "SortOrder": 100,
+              "ShowInMenu": true,
+              "BusinessAreaStartPage": false,
+              "Language": "sv",
+              "DetailsPage": null
+            },
+            {
+              "Id": 49051,
+              "PageTypeName": "InformationPage",
+              "Name": "Våra projekt",
+              "UrlName": "vara-projekt",
+              "Url": "/sv/se/byggsystem/vara-projekt/",
+              "ExternalURL": "",
+              "Children": [
+                {
+                  "Id": 49052,
+                  "PageTypeName": "FlexPage",
+                  "Name": "Kilströmskaj",
+                  "UrlName": "kilstromskaj",
+                  "Url": "/sv/se/byggsystem/vara-projekt/kilstromskaj/",
+                  "ExternalURL": "kilstromskaj",
+                  "Children": [
+                    {
+                      "Id": 49053,
+                      "PageTypeName": "InformationPage",
+                      "Name": "Intervju Kim Ahlmalm",
+                      "UrlName": "intervju-kim-ahlmalm",
+                      "Url": "/sv/se/byggsystem/vara-projekt/kilstromskaj/intervju-kim-ahlmalm/",
+                      "ExternalURL": "",
+                      "Children": [],
+                      "SortOrder": 0,
+                      "ShowInMenu": false,
+                      "BusinessAreaStartPage": false,
+                      "Language": "sv",
+                      "DetailsPage": null
+                    },
+                    {
+                      "Id": 49054,
+                      "PageTypeName": "InformationPage",
+                      "Name": "Intervju Lukas Petersson",
+                      "UrlName": "intervju-lukas-petersson",
+                      "Url": "/sv/se/byggsystem/vara-projekt/kilstromskaj/intervju-lukas-petersson/",
+                      "ExternalURL": "",
+                      "Children": [],
+                      "SortOrder": 100,
+                      "ShowInMenu": false,
+                      "BusinessAreaStartPage": false,
+                      "Language": "sv",
+                      "DetailsPage": null
+                    }
+                  ],
+                  "SortOrder": 100,
+                  "ShowInMenu": true,
+                  "BusinessAreaStartPage": false,
+                  "Language": "sv",
+                  "DetailsPage": null
+                },
+                {
+                  "Id": 66172,
+                  "PageTypeName": "FlexPage",
+                  "Name": "Lagerkransen",
+                  "UrlName": "lagerkransen",
+                  "Url": "/sv/se/byggsystem/vara-projekt/lagerkransen/",
+                  "ExternalURL": "lagerkransen",
+                  "Children": [],
+                  "SortOrder": 100,
+                  "ShowInMenu": true,
+                  "BusinessAreaStartPage": false,
+                  "Language": "sv",
+                  "DetailsPage": null
+                },
+                {
+                  "Id": 111549,
+                  "PageTypeName": "InformationPage",
+                  "Name": "Projekt Källsprångsvägen",
+                  "UrlName": "projekt-kallsprangsvagen",
+                  "Url": "/sv/se/byggsystem/vara-projekt/projekt-kallsprangsvagen/",
+                  "ExternalURL": "",
+                  "Children": [
+                    {
+                      "Id": 112200,
+                      "PageTypeName": "InformationPage",
+                      "Name": "Förskolan Hoppet",
+                      "UrlName": "forskolan-hoppet",
+                      "Url": "/sv/se/byggsystem/vara-projekt/projekt-kallsprangsvagen/forskolan-hoppet/",
+                      "ExternalURL": "",
+                      "Children": [],
+                      "SortOrder": 100,
+                      "ShowInMenu": false,
+                      "BusinessAreaStartPage": false,
+                      "Language": "sv",
+                      "DetailsPage": null
+                    },
+                    {
+                      "Id": 112180,
+                      "PageTypeName": "InformationPage",
+                      "Name": "Ciselören",
+                      "UrlName": "ciseloren",
+                      "Url": "/sv/se/byggsystem/vara-projekt/projekt-kallsprangsvagen/ciseloren/",
+                      "ExternalURL": "",
+                      "Children": [],
+                      "SortOrder": 100,
+                      "ShowInMenu": false,
+                      "BusinessAreaStartPage": false,
+                      "Language": "sv",
+                      "DetailsPage": null
+                    }
+                  ],
+                  "SortOrder": 200,
+                  "ShowInMenu": false,
+                  "BusinessAreaStartPage": false,
+                  "Language": "sv",
+                  "DetailsPage": null
+                }
+              ],
+              "SortOrder": 125,
+              "ShowInMenu": true,
+              "BusinessAreaStartPage": false,
+              "Language": "sv",
+              "DetailsPage": null
+            }
+          ],
+          "SortOrder": 150,
+          "ShowInMenu": true,
+          "BusinessAreaStartPage": true,
+          "Language": "sv",
+          "DetailsPage": null
+        }
+      ],
+      "SortOrder": 300,
+      "ShowInMenu": true,
+      "BusinessAreaStartPage": false,
+      "Language": "sv",
+      "DetailsPage": null,
+      "breadcrumb": [
+        {
+          "title": "Sverige",
+          "path": "/sv/se/"
+        }
+      ]
+    },
+    {
+      "Id": 568,
+      "PageTypeName": "ErrorPage",
+      "Name": "404",
+      "UrlName": "404",
+      "Url": "/",
+      "ExternalURL": "",
+      "Children": [],
+      "SortOrder": 350,
+      "ShowInMenu": false,
+      "BusinessAreaStartPage": false,
+      "Language": "sv",
+      "DetailsPage": null
+    },
+    {
+      "Id": 41503,
+      "PageTypeName": "FlexStartPage",
+      "Name": "Global",
+      "UrlName": "global",
+      "Url": "/en/global/",
+      "ExternalURL": "global",
+      "Children": [
+        {
+          "Id": 41507,
+          "PageTypeName": "FlexStartPage",
+          "Name": "Forestry & members",
+          "UrlName": "forestry-member",
+          "Url": "/en/global/forestry-member/",
+          "ExternalURL": "forestry",
+          "Children": [
+            {
+              "Id": 41508,
+              "PageTypeName": "NewsListPage",
+              "Name": "News",
+              "UrlName": "news",
+              "Url": "/en/global/forestry-member/news/",
+              "ExternalURL": "",
+              "Children": [],
+              "SortOrder": 200,
+              "ShowInMenu": false,
+              "BusinessAreaStartPage": false,
+              "Language": "en",
+              "DetailsPage": null
+            },
+            {
+              "Id": 41510,
+              "PageTypeName": "InformationPage",
+              "Name": "Contact us",
+              "UrlName": "contact-us",
+              "Url": "/en/global/forestry-member/contact-us/",
+              "ExternalURL": "",
+              "Children": [],
+              "SortOrder": 300,
+              "ShowInMenu": true,
+              "BusinessAreaStartPage": false,
+              "Language": "en",
+              "DetailsPage": null
+            }
+          ],
+          "SortOrder": 500,
+          "ShowInMenu": true,
+          "BusinessAreaStartPage": false,
+          "Language": "en",
+          "DetailsPage": null
+        }
+      ],
+      "SortOrder": 200,
+      "ShowInMenu": true,
+      "BusinessAreaStartPage": true,
+      "Language": "en",
+      "DetailsPage": null
+    },
+    {
+      "Id": 73345,
+      "PageTypeName": "FlexStartPage",
+      "Name": "Great Britain",
+      "UrlName": "gb",
+      "Url": "/en/gb/",
+      "ExternalURL": "gb",
+      "Children": [
+        {
+          "Id": 65640,
+          "PageTypeName": "FlexStartPage",
+          "Name": "Forestry & member",
+          "UrlName": "Forestry-member",
+          "Url": "/en/gb/Forestry-member/",
+          "ExternalURL": "",
+          "Children": [
+            {
+              "Id": 65668,
+              "PageTypeName": "InformationPage",
+              "Name": "Contact us",
+              "UrlName": "contact-us",
+              "Url": "/en/gb/Forestry-member/contact-us/",
+              "ExternalURL": "",
+              "Children": [],
+              "SortOrder": 100,
+              "ShowInMenu": true,
+              "BusinessAreaStartPage": false,
+              "Language": "en",
+              "DetailsPage": null
+            },
+            {
+              "Id": 73291,
+              "PageTypeName": "NewsListPage",
+              "Name": "News",
+              "UrlName": "news",
+              "Url": "/en/gb/Forestry-member/news/",
+              "ExternalURL": "",
+              "Children": [
+                {
+                  "Id": 112245,
+                  "PageTypeName": "NewsArchivePage",
+                  "Name": "Great Britain Forestry News",
+                  "UrlName": "2023",
+                  "Url": "/en/gb/Forestry-member/news/2023/",
+                  "ExternalURL": "",
+                  "Children": [],
+                  "SortOrder": 100,
+                  "ShowInMenu": false,
+                  "BusinessAreaStartPage": false,
+                  "Language": "en",
+                  "DetailsPage": null
+                }
+              ],
+              "SortOrder": 600,
+              "ShowInMenu": false,
+              "BusinessAreaStartPage": false,
+              "Language": "en",
+              "DetailsPage": null
+            }
+          ],
+          "SortOrder": 100,
+          "ShowInMenu": true,
+          "BusinessAreaStartPage": false,
+          "Language": "en",
+          "DetailsPage": null
+        },
+        {
+          "Id": 73294,
+          "PageTypeName": "FlexStartPage",
+          "Name": "Wood",
+          "UrlName": "wood",
+          "Url": "/en/gb/wood/",
+          "ExternalURL": "woodgb",
+          "Children": [],
+          "SortOrder": 150,
+          "ShowInMenu": true,
+          "BusinessAreaStartPage": true,
+          "Language": "en",
+          "DetailsPage": null
+        }
+      ],
+      "SortOrder": 200,
+      "ShowInMenu": true,
+      "BusinessAreaStartPage": true,
+      "Language": "en",
+      "DetailsPage": null
+    }
+  ],
+  "SortOrder": 1010,
+  "ShowInMenu": true,
+  "BusinessAreaStartPage": false,
+  "Language": "sv",
+  "DetailsPage": null
+}
