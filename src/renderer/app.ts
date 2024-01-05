@@ -56,10 +56,10 @@ function createApp(pageContext: PageContext) {
   const pageContextReactive = reactive(pageContext);
   setPageContext(app, pageContextReactive);
 
-  // Install Pinia
+  // Initialize Pinia
   const store = createPinia();
   app.use(store);
-  // Install i18n with current page language`
+  // InInitialize i18n and Dayjs with current page language`
   app.use(i18n(pageContext.locale));
   // Initialize flash message with default values
   app.provide('$flashMessage', reactive(initFlashMessage()));

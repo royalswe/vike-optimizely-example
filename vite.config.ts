@@ -8,15 +8,12 @@ export default defineConfig(() => {
   return {
     plugins: [
       vue(),
-      mkcert(),
+      mkcert(), // create a self-signed certificate
       vike({
         // Disable automatic URL normalization.
         disableUrlNormalization: true,
       }),
     ],
-
-    // We manually add a list of dependencies to be pre-bundled, in order to avoid a page reload at dev start which breaks vite-plugin-ssr's CI
-    //optimizeDeps: { include: ['cross-fetch'] },
 
     resolve: {
       alias: {
@@ -26,7 +23,7 @@ export default defineConfig(() => {
 
     // if to set custom server configuration, remove this if you are satisfied with the default settings
     server: {
-      https: true,
+      //https: true,
       //host: 'localdev.com',
       //origin: 'https://localdev.com:3000',
       port: 3000,

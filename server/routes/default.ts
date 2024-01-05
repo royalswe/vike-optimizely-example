@@ -137,12 +137,12 @@ router.get('*', async (req, res, next) => {
 
   if (!httpResponse) return next();
 
-  const { statusCode, headers } = httpResponse;
+  const { statusCode, headers, earlyHints } = httpResponse;
   // https://vike.dev/preload#early-hints
-  // will probably be usefull
-  // if (res.writeEarlyHints) {
-  //   res.writeEarlyHints({ link: earlyHints.map((e) => e.earlyHintLink) });
-  // }
+  // usefull when using onServerPrefetch
+  if (res.writeEarlyHints) {
+    res.writeEarlyHints({ link: earlyHints.map((e) => e.earlyHintLink) });
+  }
 
   res.status(statusCode);
   headers.forEach(([name, value]) => res.setHeader(name, value));

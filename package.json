@@ -3,7 +3,7 @@
   "version": "1.0.0-beta.2",
   "main": "dist/server.js",
   "scripts": {
-    "dev": "NODE_TLS_REJECT_UNAUTHORIZED=0 ts-node --esm ./server/server.ts",
+    "dev": "ts-node --esm ./server/server.ts",
     "dev:debug": "node --inspect -r ts-node/register/transpile-only --loader ts-node/esm ./server/server.ts",
     "dev:watch": "nodemon server -e ts,json --exec \"npm run dev\"",
     "build": "vite build && npm run move-to-dist && npm run build:server",
@@ -29,8 +29,8 @@
     "npm": "^10.2.5",
     "pinia": "^2.1.7",
     "sirv": "^2.0.4",
-    "vike": "^0.4.152",
-    "vue": "^3.4.x",
+    "vike": "^0.4.153",
+    "vue": "^3.4.5",
     "vue-cookies": "^1.8.3",
     "vue-i18n": "^9.8.0"
   },
@@ -55,7 +55,7 @@
     "vue-tsc": "^1.8.27"
   },
   "engines": {
-    "node": "18.12.1"
+    "node": "18.18.2"
   },
   "type": "module"
 }

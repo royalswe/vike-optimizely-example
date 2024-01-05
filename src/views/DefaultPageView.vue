@@ -2,14 +2,15 @@
   <div>
     <suspense>
       <template #default>
-        <div>
-          <component v-if="component" :is="component" :page="page" />
-        </div>
+        <component v-if="component" :is="component" :page="page" />
+        <loader v-else>
+          {{ t('common.loading') }}
+        </loader>
       </template>
       <template #fallback>
-        <o-loader class="u-width-100">
+        <loader>
           {{ t('common.loading') }}
-        </o-loader>
+        </loader>
       </template>
     </suspense>
   </div>
@@ -17,7 +18,7 @@
 
 <script setup lang="ts">
 import type { Component } from 'vue';
-
+import Loader from '#src/components/Loader.vue';
 import { usePageContext } from '#src/renderer/usePageContext';
 
 import { defineAsyncComponent, markRaw, ref, watch, inject } from 'vue';
@@ -36,7 +37,8 @@ const error = ref(false);
 
 const initPage = async () => {
   error.value = false;
-  if (pageContext.currentPage.PageTypeName === pageContext.currentPage.DetailsPage) {
+
+  if (pageContext.currentPage?.PageTypeName && pageContext.currentPage?.PageTypeName === pageContext.currentPage?.DetailsPage) {
     component.value = markRaw(defineAsyncComponent(() => import(`#src/views/${pageContext.currentPage.DetailsPage}View.vue`)));
   }
   else {
@@ -50,13 +52,6 @@ const initPage = async () => {
 
 const getContent = async () => {
   page.value = pageContext.documentProps;
-  // if you are logged out and try to access a page that requires authentication
-  if (pageContext.currentPage.PageTypeName === 'ApplicationContentPage' && !page.value?.contentType?.length) {
-    $flashMessage.modifiers = ['attention'];
-    $flashMessage.show = true;
-    $flashMessage.text = t('identity.login');
-    return;
-  }
 
   const pageType = page.value.contentType.last();
   component.value = markRaw(defineAsyncComponent(() => import(`#src/views/${pageType}View.vue`)));
@@ -75,5 +70,7 @@ watch(error, (value) => {
   }
 });
 
-await initPage();
+setTimeout(async () => {
+  await initPage();
+}, 500);
 </script>

@@ -301,7 +301,7 @@
   "oldBrowserInformation": "<p>Hej, du f&aring;r detta meddelandet f&ouml;r att din nuvarande webbl&auml;sare &auml;r f&ouml;r&aring;ldrad! V&auml;nligen byt eller uppgradera din webbl&auml;sare</p>",
   "startPageSelectionList": [
     {
-      "href": "https://localhost.com:3000/sv/se/skog-medlem/",
+      "href": "/sv/se/skog-medlem/",
       "text": "Skog & medlem",
       "contentLink": {
         "id": 45206,
@@ -311,17 +311,7 @@
       }
     },
     {
-      "href": "https://localhost.com:3000/sv/se/tra/",
-      "text": "Trä",
-      "contentLink": {
-        "id": 47254,
-        "workId": 0,
-        "guidValue": "8e2dbd31-ccfc-4a6d-a59c-10f10bf4b9df",
-        "url": "https://localhost.com:3000/sv/se/tra/"
-      }
-    },
-    {
-      "href": "https://localhost.com:3000/sv/se/byggsystem/",
+      "href": "/sv/se/byggsystem/",
       "text": "Byggsystem",
       "contentLink": {
         "id": 49043,
@@ -331,53 +321,23 @@
       }
     },
     {
-      "href": "https://localhost.com:3000/sv/se/massa/",
-      "text": "Massa",
+      "href": "/en/global/",
+      "text": "Global start page",
       "contentLink": {
         "id": 47612,
         "workId": 0,
         "guidValue": "91796810-1f86-4c3d-a98c-8a839ab2b367",
-        "url": "https://localhost.com:3000/sv/se/massa/"
+        "url": "https://localhost.com:3000/en/global/"
       }
     },
     {
-      "href": "https://localhost.com:3000/sv/se/bioprodukter/",
-      "text": "Bioprodukter",
+      "href": "/en/gb/",
+      "text": "Great Britain start page",
       "contentLink": {
         "id": 42960,
         "workId": 0,
         "guidValue": "f3f436a0-134b-440d-9aa4-45f23777c089",
-        "url": "https://localhost.com:3000/sv/se/bioprodukter/"
-      }
-    },
-    {
-      "href": "https://localhost.com:3000/sv/se/energi/",
-      "text": "Energi",
-      "contentLink": {
-        "id": 43262,
-        "workId": 0,
-        "guidValue": "f259369e-524f-4328-a0da-807c10574c65",
-        "url": "https://localhost.com:3000/sv/se/energi/"
-      }
-    },
-    {
-      "href": "https://localhost.com:3000/sv/se/hallbarhet/",
-      "text": "Hållbarhet",
-      "contentLink": {
-        "id": 43432,
-        "workId": 0,
-        "guidValue": "b9ea45e1-ee14-4a7a-a3cc-27593751e78b",
-        "url": "https://localhost.com:3000/sv/se/hallbarhet/"
-      }
-    },
-    {
-      "href": "https://localhost.com:3000/sv/se/om-local/",
-      "text": "Om mig",
-      "contentLink": {
-        "id": 43732,
-        "workId": 0,
-        "guidValue": "8f97d0ad-7a2e-41b1-afa6-2c6cd4bd8122",
-        "url": "https://localhost.com:3000/sv/se/om-local/"
+        "url": "https://localhost.com:3000/en/gb/"
       }
     }
   ],

@@ -1,6 +1,8 @@
 <template>
-  <slot />
-  <admin-buttons v-if="isAdminOrEditor" />
+  <div class="d-flex flex-column min-vh-100">
+    <slot />
+    <admin-buttons v-if="isAdminOrEditor" />
+  </div>
 </template>
 
 <script setup lang="ts">

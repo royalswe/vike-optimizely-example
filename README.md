@@ -1,9 +1,13 @@
-Vue 3 app running with Vike
-Features
+Vue 3 app running with Vike.
+Uses optimizely CMS that is mocked in this demo
+
+## Features
 
 - https
 - Pina
 - i18n
+- dayjs
+- lazyloading
 
 ## Prerequisites
 
@@ -18,31 +22,18 @@ npm install
 ### Compile and Hot-Reload for Development
 
 ```sh
-npm run server:watch
-```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
+npm run dev
 ```
 
 ## Project architecture
 
-First page load is SSR then client navigation (SPA).
+First page load is SSR then client navigation.
 
 # vite-plugin-ssr (vps)
 
 ## V1 Design
 
-The V1 design which this project is using is in Beta, it will unlocks many more capabilities and less bundled source code.
-The documentation is wrote for the v0.4 design but the v1 is on the way. https://github.com/brillout/vite-plugin-ssr/issues/578#issuecomment-1366654394
+The V1 design which this project is using.
 
 ## + files
 
@@ -77,3 +68,31 @@ The new folder Page is our new route and renderer is vps specifik files
 │ │ | └── +Layout -- layout file, if not set it will pick rendere/LayoutDefault.ts
 │ │ └── index
 │ │ └── same as @layout. index is a folder that vps ignore so it's the root
+
+## Run the built app locally
+
+- Build for production but with development configuration to use https localy `npm run build:dev`. This builds the Vike project with a development flag and runs the server as if it was running in production
+  Then run the project with `npm run preview `
+
+## Deployment for Azure web apps
+
+server folder contains the following files that needs more explanation
+
+- run.cjs - entry point for the server
+- "start": "start script for the node server",
+- "build": "build script for the node server",
+- "postbuild": "runs after build and copies package.json, run.cjs and web.config to dist folder"
+- web.config - iis config for the server, sets entrypoint file to run.cjs to run js modules correctly.
+
+### Azure DevOps Piepelines
+
+#### Build
+
+- Pipeline runs npm run build in server folder
+- Publishes dist folder as artifact
+
+#### Release
+
+- Copy Files to: /dist/dist: Copy dist files to dist folder to be able to deploy dist folder and not just the files inside it.
+- Replace tokens in /dist - Replace variable placeholders with values from pipeline variables
+- Deploy node app - deploys build dist folder

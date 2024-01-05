@@ -1,21 +1,18 @@
 <template>
-  <div data-element-id="NoticeBlock" class="c-alert" :class="'c-alert--' + block?.type + ' c-alert--flex'">
-    <span class="c-alert__icon">
+  <div data-element-id="NoticeBlock" class="alert" :class="'alert-' + block?.type + ' d-flex'">
+    <span class="alert-icon">
       <span class="mdi" :class="icon"></span>
     </span>
-    <div class="c-alert__text">
-      <div v-html="block?.content">
-      </div>
+    <div class="alert-text">
+      <div v-html="block?.content"></div>
       <div v-if="block?.link" class="buttons">
-        <a :href="block.link.value" class="o-button o-button--primary">{{
-          block?.linkText
-        }}</a>
+        <a :href="block.link.value" class="btn btn-primary">{{ block?.linkText }}</a>
       </div>
     </div>
-    <span class="js-close-alert c-alert__close" data-element-id="NoticeBlock" @click.prevent="block.onlyShowOnce">
-    </span>
+    <span class="js-close-alert alert-close" data-element-id="NoticeBlock" @click.prevent="block.onlyShowOnce"></span>
   </div>
 </template>
+
 
 <script setup lang="ts">
 
@@ -28,7 +25,7 @@ const props = defineProps<{
     };
     linkText: string;
     onlyShowOnce: boolean;
-  }
+  };
 }>();
 
 let icon = "mdi-close-circle";

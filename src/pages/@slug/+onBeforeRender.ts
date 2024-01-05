@@ -3,6 +3,7 @@ import type { PageContext } from '#src/renderer/types';
 
 import '#src/mocks/mocks';
 import { render } from 'vike/abort';
+import { createApp } from '#src/renderer/app';
 import { fetchPageHierarchy } from '#src/router/hierarchy.server';
 import {
   getRootMenuPage,
@@ -16,6 +17,10 @@ import navigationService from '#src/services/navigationService';
 import contentService from '#src/services/contentService';
 
 async function onBeforeRender(pageContext: PageContext) {
+  // pinia store, https://vite-plugin-ssr.com/store
+  const { store } = createApp(pageContext);
+  const initialStoreState = store.state.value;
+
   const pageHierarchy = await fetchPageHierarchy(
     pageContext.locale,
     pageContext.isPreview
@@ -31,8 +36,6 @@ async function onBeforeRender(pageContext: PageContext) {
   const currentPage = pageResult.currentPage;
 
   if (!currentPage) {
-    console.log('currentpae ', currentPage);
-
     throw render(404);
   }
 
@@ -48,6 +51,9 @@ async function onBeforeRender(pageContext: PageContext) {
     false,
     pageContext.locale
   );
+
+  // store site settings in pinia store
+  initialStoreState.setSiteSettings = siteSettings;
 
   // Map to menu item
   const navMenu = navigationService.MapPageToMenuItem(

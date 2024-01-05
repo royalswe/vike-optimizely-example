@@ -18,9 +18,11 @@ export default onRenderClient;
 let app: App<Element> & { changePage: (pageContext: PageContext) => void };
 
 async function onRenderClient(pageContext: PageContext) {
+  // if app doesn't exist, create it
   if (!app) {
     const instance = createApp(pageContext);
     app = instance.app;
+    instance.store.state.value = pageContext.initialStoreState;
     app.mount('#application');
   } else {
     // Update language in i18n
@@ -39,9 +41,6 @@ async function onRenderClient(pageContext: PageContext) {
     // Custom directives
     addClickOutsideDirective(app);
     addFallbackImageDirective(app);
-    // if (cookieService.userConsentsToStatisticCookies()) {
-    //   cookieService.setCookie(cookieName.VisitType, pageContext.visitType);
-    // }
   } else {
     // runs on client side navigation
     //

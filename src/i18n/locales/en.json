@@ -1,6 +1,7 @@
 {
   "common": {
     "greetings": "Welcome",
+    "menu": "Menu",
     "readmore": "Read more",
     "st": "pcs",
     "loading": "Loading...",

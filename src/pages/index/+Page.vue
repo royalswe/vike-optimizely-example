@@ -1,24 +1,25 @@
 <template>
     <header-component>
-        <template #headerLogo>
-            <img :src="'/static/img/temp-logo-green.svg'" class="c-compact-header__logo-image" alt="logo" />
-        </template>
+        <img :src="'/static/img/vike-oblique.svg'" class="navbar-brand__logo-image" alt="logo" />
+        <h1 class="navbar-brand__title ms-2">{{ t('common.greetings') }}</h1>
     </header-component>
-    <div class="choose-market-page">
-        <div class="market-selection">
-            <h1>{{ t('common.header.selectstartpage') }}</h1>
-            <div class="market-list">
-                <div v-for="(market, index) in marketPages" :key="index" class="market-item">
-                    <Link :href="market.url">
+
+    <div class="container flex-grow-1 d-flex justify-content-center align-items-center mt-4">
+        <div>
+            <h1 class="mb-4">{{ t('common.header.selectstartpage') }}</h1>
+            <div class="list-group list-group-flush">
+                <div v-for="(market, index) in marketPages" :key="index" class="list-group-item market-item border-0">
+                    <Link :href="market.url" class="text-decoration-none">
                     <span>{{ market.name }}</span>
                     </Link>
                 </div>
             </div>
         </div>
     </div>
+
     <footer-component />
 </template>
-  
+
 <script lang="ts" setup>
 import { useI18n } from 'vue-i18n';
 import Link from '#src/renderer/Link.vue';
@@ -29,32 +30,10 @@ import HeaderComponent from '#src/components/HeaderComponent.vue';
 const { t } = useI18n();
 const { marketPages } = defineProps(['marketPages']);
 </script>
-  
-<style scoped>
-.choose-market-page {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
 
+<style scoped>
 h1 {
     color: #04a300;
     font-family: sans-serif;
 }
-
-.market-selection {
-    text-align: center;
-}
-
-.market-list {
-    margin-top: 20px;
-}
-
-.market-item {
-    margin-bottom: 10px;
-}
-
-/* Add any additional styling as needed */
 </style>
-  

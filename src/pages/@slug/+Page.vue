@@ -1,71 +1,34 @@
 <template>
     <div>
-        <header-component>
-            <template #headerLogo>
-                <Link :href="marketStartPage" class="c-compact-header__logo-link">
-                <img :src="'/static/img/temp-logo-green.svg'" class="c-compact-header__logo-image" alt="logo" />
-                </Link>
-            </template>
-        </header-component>
-
-        <aside class="left-menu">
-            <div class="menu-header">
-                <h2>Menu</h2>
-            </div>
-            <nav-items v-for="(item, index) in navMenu" :key="index" :item="item" />
-        </aside>
-
-        <client-only>
-            <h3>Everything between client-only tag, runs only on client side only</h3>
-        </client-only>
-
-
-        <footer-component />
-
+        <flash-message />
+        <!-- Teleport modals to this element -->
+        <div id="modal-container"></div>
+        <suspense>
+            <base-view v-if="!isStyleApp" v-bind="$props">
+                <default-page-view />
+            </base-view>
+            <default-page-view v-else />
+        </suspense>
     </div>
 </template>
 
-<style scoped>
-.left-menu {
-    width: 200px;
-    /* Adjust the width as needed */
-    height: 100%;
-    /* Adjust the background color as needed */
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    box-sizing: border-box;
-}
-
-/* Add any additional styling for NavItems component */
-</style>
-
 <script setup lang="ts">
-import HeaderComponent from '#src/components/HeaderComponent.vue';
-import FooterComponent from '#src/components/FooterComponent.vue';
-import NavItems from '#src/components/NavItems.vue';
-
-
-import { onErrorCaptured, ref, inject } from 'vue';
-import { useI18n } from 'vue-i18n';
-import Link from '#src/renderer/Link.vue';
+import BaseView from '#src/views/BaseView.vue';
+import DefaultPageView from '#src/views/DefaultPageView.vue';
 import { usePageContext } from '#src/renderer/usePageContext';
-import { ClientOnly } from '#src/renderer/ClientOnly';
+import { inject, onErrorCaptured } from 'vue';
 import { initFlashMessage } from '#src/models/flashMessage';
+import FlashMessage from '#src/components/FlashMessage.vue';
+import { useI18n } from 'vue-i18n';
 
-defineProps(['navMenu']);
+defineProps(['navMenu', 'rootPage', 'notices', 'childNotices', 'route']);
 
-
-const { t } = useI18n();
-const pageContext = usePageContext();
+const isStyleApp = usePageContext().isStyleApp;
 const $flashMessage = inject('$flashMessage', initFlashMessage());
+const { t } = useI18n();
 
-const marketStartPage = pageContext.market;
-
-const error = ref(false);
-
+// Catches error in suspense
 onErrorCaptured((callback) => {
-    error.value = true;
     $flashMessage.duration = 999999; // show message in 16 minutes
     $flashMessage.show = true;
     $flashMessage.text = t('common.errors.unknown');

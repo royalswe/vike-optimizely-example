@@ -7,8 +7,9 @@ export default {
     'initialStoreState',
     'locale',
     'user',
-    'market',
     'documentProps',
+    'currentPage',
+    'siteSettings',
   ],
   meta: {
     onBeforeRender: {

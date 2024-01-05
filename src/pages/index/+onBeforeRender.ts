@@ -1,20 +1,11 @@
-import type { PageContext } from '#src/renderer/types';
-
-import { createApp } from '#src/renderer/app';
-
-async function onBeforeRender(pageContext: PageContext) {
-  // pinia store
-  const { store } = createApp(pageContext);
-  const initialStoreState = store.state.value;
-
+async function onBeforeRender() {
   return {
     pageContext: {
       pageProps: {
-        page: 'props from onBeforeRender',
         marketPages: [
-          { name: 'Sweden', url: '/sv/se' },
-          { name: 'Great Britain', url: '/en/gb' },
-          { name: 'Denmark', url: '/dk/dk' },
+          { name: 'Sweden', url: '/sv/se/' },
+          { name: 'Great Britain', url: '/en/gb/' },
+          { name: 'Global', url: '/en/global/' },
         ],
       },
       documentProps: {
@@ -22,7 +13,6 @@ async function onBeforeRender(pageContext: PageContext) {
         metaDescription: 'meta description.',
         metaKeywords: 'ssr, spa, vite, vue',
       },
-      initialStoreState,
     },
   };
 }

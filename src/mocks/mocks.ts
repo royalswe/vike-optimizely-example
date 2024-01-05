@@ -1,9 +1,11 @@
+// Theese are mocks only for demo purposes.
 import { http, HttpResponse } from 'msw';
 import { setupServer } from 'msw/node';
 import pageHierarchy from './pageHierarchy.json';
 import siteSettings from './siteSettings.json';
+import getContent from './getContent.json';
 
-// 2. Describe network behavior with request handlers.
+// Describe network behavior with request handlers.
 const server = setupServer(
   http.get(
     import.meta.env.VITE_API_BASE_URL + '/_api/pages/getpagehiearchy',
@@ -19,18 +21,12 @@ const server = setupServer(
     }
   ),
   http.get(import.meta.env.VITE_API_BASE_URL + '/api/episerver/*', () => {
-    return HttpResponse.json(siteSettings);
+    return HttpResponse.json(getContent);
   }),
   http.get(import.meta.env.VITE_API_BASE_URL + '/_api/notices/*', () => {
     return HttpResponse.json(null);
-  }),
-  http.get(
-    import.meta.env.VITE_API_BASE_URL + '/api/episerver/v2.0/content/*',
-    () => {
-      return HttpResponse.json(siteSettings);
-    }
-  )
+  })
 );
 
-// 3. Start request interception by starting the Service Worker.
+// Start request interception by starting the Service Worker.
 server.listen();

@@ -40,7 +40,6 @@ interface Navigator {
 declare const epi: any;
 declare const $$epiforms: any;
 declare const grecaptcha: any;
-declare const GoogleTagManager: any;
 declare const decodeEntities: any;
 declare const google: any;
 declare const $i18n: any;
