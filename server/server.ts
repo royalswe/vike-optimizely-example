@@ -41,10 +41,10 @@ async function buildServer() {
       reply.status(statusCode);
 
       // remove bellow lines
-      // httpResponse.pipe(reply.raw);
-      // return reply;
+      httpResponse.pipe(reply.raw);
+      return reply;
       // and uncomment bellow line and it will work
-      return reply.send(await httpResponse.getNodeStream());
+      //return reply.send(await httpResponse.getNodeStream());
     }
   });
 
