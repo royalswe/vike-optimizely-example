@@ -3,7 +3,13 @@ import { renderPage } from 'vike/server';
 
 async function buildServer() {
   // always dev in this branch
-  const app = Fastify({ logger: false });
+  const app = Fastify({
+    http2: true,
+    https: {
+      key: (await import('fs')).readFileSync('cert/dev.pem'),
+      cert: (await import('fs')).readFileSync('cert/cert.pem'),
+    },
+  });
 
   // We instantiate Vite's development server and integrate its middleware to our server.
   // ⚠️ We instantiate it only in development. (It isn't needed in production and it
@@ -13,6 +19,15 @@ async function buildServer() {
     await vite.createServer({
       server: {
         middlewareMode: true,
+        https: {
+          key: (await import('fs')).readFileSync('cert/dev.pem'),
+          cert: (await import('fs')).readFileSync('cert/cert.pem'),
+        },
+        // hmr: {
+        //   protocol: 'wss',
+        //   clientPort: 443,
+        //   port: 443,
+        // }
       },
     })
   ).middlewares;
@@ -37,13 +52,13 @@ async function buildServer() {
       return;
     } else {
       const { statusCode, headers } = httpResponse;
-      headers.forEach(([name, value]) => reply.header(name, value));
+      headers.forEach(([name, value]) => reply.raw.setHeader(name, value));
+      // TODO: I think bellow line is redundant
       reply.status(statusCode);
 
-      // remove bellow lines
       httpResponse.pipe(reply.raw);
       return reply;
-      // and uncomment bellow line and it will work
+      // depricated bellow
       //return reply.send(await httpResponse.getNodeStream());
     }
   });
@@ -54,8 +69,8 @@ async function buildServer() {
 async function main() {
   const fastify = await buildServer();
 
-  const port = process.env.PORT || 3000;
-  fastify.listen({ port: +port }, function (err, address) {
+  const port = process.env.PORT || 4000;
+  fastify.listen({ port: +port }, function(err, address) {
     if (err) {
       fastify.log.error(err);
       process.exit(1);
