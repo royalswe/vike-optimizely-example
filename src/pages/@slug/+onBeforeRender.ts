@@ -2,7 +2,7 @@
 import type { PageContext } from '#src/renderer/types';
 
 import '#src/mocks/mocks';
-import { render } from 'vike/abort';
+import { render, redirect } from 'vike/abort';
 import { createApp } from '#src/renderer/app';
 import { fetchPageHierarchy } from '#src/router/hierarchy.server';
 import {
@@ -36,7 +36,9 @@ async function onBeforeRender(pageContext: PageContext) {
   const currentPage = pageResult.currentPage;
 
   if (!currentPage) {
-    throw render(404);
+    throw redirect('/sv/se/byggsystem/', 301);
+
+    //throw render(404);
   }
 
   if (pageContext.market === '') {
