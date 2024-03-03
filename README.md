@@ -1,6 +1,9 @@
 Vue 3 app running with Vike.
 Uses optimizely CMS that is mocked in this demo
 
+## Branch with Fastify instead of express
+https://github.com/royalswe/vike-optimizely-example/tree/fastify-example
+
 ## Features
 
 - https
