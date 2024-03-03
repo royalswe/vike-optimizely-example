@@ -1,4 +1,8 @@
-export default function route(pageContext: { urlPathname: string }) {
+export { route };
+
+import type { RouteSync } from 'vike/types';
+
+const route: RouteSync = (pageContext): ReturnType<RouteSync> => {
   // If it is market page
   if (
     pageContext.urlPathname === '/' ||
@@ -8,4 +12,4 @@ export default function route(pageContext: { urlPathname: string }) {
     return true;
   }
   return false;
-}
+};
